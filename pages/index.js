@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Hero from "../components/home/Hero";
+
+import styles from "../styles/home.module.css";
 
 export default function Home() {
   return (
@@ -15,10 +18,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="container">
-      
-
+       <Hero />
       </div>
-    </div>
   );
 }

@@ -1,19 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/layout.module.css";
 import hamburger from "../public/hamburger.svg";
 import logo from "../public/logo.svg";
 import MobileMenu from "./MobileMenu";
 
 function Layout({ children }) {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false);
 
-  const handleHamburgerClick = () => setClick(prev => !prev)
-
-  useEffect(() => {
-    console.log(click ? 'active!' : 'inacctive')
-  }, [click])
+  const handleHamburgerClick = () => setClick((prev) => !prev);
 
   return (
     <>
@@ -51,8 +47,6 @@ function Layout({ children }) {
             <Link href={"/contact"}>Contact</Link>
             <button>Free Growth Guide</button>
           </div>
-
-          
         </div>
       </div>
       {children}

@@ -10,12 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-
-   
+    justify-content: space-around;  
 }
-
-
 
 .mobileMenu h2 {
     position: absolute;
