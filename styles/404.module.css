@@ -1,0 +1,14 @@
+.error > * {
+    margin: 0;
+}
+.error h1 {
+    margin-bottom: 10px;
+}
+
+.error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
