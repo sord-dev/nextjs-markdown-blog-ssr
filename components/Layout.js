@@ -1,10 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../styles/layout.module.css";
+import hamburger from "../public/hamburger.svg";
 import logo from "../public/logo.svg";
+import MobileMenu from "./MobileMenu";
 
 function Layout({ children }) {
+  const [click, setClick] = useState(false)
+
+  const handleHamburgerClick = () => setClick(prev => !prev)
+
+  useEffect(() => {
+    console.log(click ? 'active!' : 'inacctive')
+  }, [click])
+
   return (
     <>
       <div className={styles.navbar_container}>
@@ -22,12 +32,27 @@ function Layout({ children }) {
             </div>
           </Link>
 
+          <div className={styles.mobileMenu}>
+            <Image
+              src={hamburger}
+              layout={"fixed"}
+              height={"35px"}
+              width={"35px"}
+              alt="logo image"
+              onClick={handleHamburgerClick}
+            />
+          </div>
+
+          {click && <MobileMenu onClick={handleHamburgerClick} />}
+
           <div>
             <Link href={"/services"}>Services</Link>
             <Link href={"/blog"}>Blog</Link>
             <Link href={"/contact"}>Contact</Link>
             <button>Free Growth Guide</button>
           </div>
+
+          
         </div>
       </div>
       {children}
