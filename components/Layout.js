@@ -24,7 +24,7 @@ function Layout({ children }) {
                 width={"50px"}
                 alt="logo image"
               />
-              <h1>SAVESITE</h1>
+              <h1>sord-dev</h1>
             </div>
           </Link>
 
