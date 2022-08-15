@@ -47,10 +47,11 @@
   }
   
   @media only screen and (max-width: 900px) {
-    .hero div {
+    .hero .content {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      font-size: .9em;
     }
   
     .hero .image {
@@ -58,7 +59,13 @@
     }
   }
   
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 750px) {
+
+    .hero .content {
+      font-size: .7em;
+      gap:10px;
+    }
+
     .hero .content h1 {
       font-size: 40px;
       letter-spacing: 0.7px;
@@ -71,17 +78,37 @@
       letter-spacing: 0.3px;
     }
   }
-  
-  @media only screen and (max-width: 450px) {
+
+  @media only screen and (max-width: 650px) {
+
+    .hero .content {
+      font-size: .2em;
+      gap:10px;
+    }
+
     .hero .content h1 {
       font-size: 30px;
-      letter-spacing: 0.7px;
+      letter-spacing: 0.6px;
     }
+
+    
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .hero .content {
+      font-size: .1em;
+      gap:10px;
+    }
+    .hero .content h1 {
+      font-size: 23px;
+      max-width: max-content;
+      letter-spacing: 0.5px;
+    }
+    
   
     .hero .content p {
-      max-width: 500px;
       line-height: 25px;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 0.3px;
     }
   }

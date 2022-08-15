@@ -22,18 +22,34 @@ export default function Home() {
       <Hero />
 
       <div className="container">
-        
-
         <div className={styles.services}>
           <h3>SERVICES</h3>
           <h2>A website should be a solution, not a problem</h2>
 
           <div>
-            <Card type={'service'} />
-            <Card type={'service'} />
-            <Card type={'service'} />
+            <Card type={"service"} />
+            <Card type={"service"} />
+            <Card type={"service"} />
           </div>
         </div>
+      </div>
+
+      <div className={styles.projectHeading}>
+        <div>
+          <h3>CLIENT PROJECTS</h3>
+          <h2>
+            I think you should invest in a copywriter, you don&apos;t know what
+            to say yet.
+          </h2>
+        </div>
+      </div>
+
+      <div className="container pt-10">
+      <div className={styles.projectList}>
+        <Card type={"project"} />
+        <Card type={"project"} />
+      </div>
+
       </div>
     </div>
   );

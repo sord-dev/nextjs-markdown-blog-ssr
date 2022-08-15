@@ -11,6 +11,7 @@ function Layout({ children }) {
 
   const handleHamburgerClick = () => setClick((prev) => !prev);
 
+
   return (
     <>
       <div className={styles.navbar_container}>

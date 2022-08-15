@@ -20,9 +20,7 @@ a {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, p, span {
-  color: #212529;
-}
+
 
 button {
   width: 175px;
@@ -38,3 +36,8 @@ button {
   line-height: 17px;
   letter-spacing: 0.015em;
 }
+
+.pt-10{
+  padding-top: 20px;
+}
+

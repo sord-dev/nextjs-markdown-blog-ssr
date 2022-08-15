@@ -7,11 +7,10 @@
 
 .error {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
-.error div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+

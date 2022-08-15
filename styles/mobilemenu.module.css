@@ -20,6 +20,14 @@
     right: 20px;
 }
 
+.mobileMenu .image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+
 .mobileMenu button {
     width: 175px;
     height: 45px;
