@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Card from "../components/Card";
 import Hero from "../components/home/Hero";
 
 import styles from "../styles/home.module.css";
@@ -18,7 +19,22 @@ export default function Home() {
         />
       </Head>
 
-       <Hero />
+      <Hero />
+
+      <div className="container">
+        
+
+        <div className={styles.services}>
+          <h3>SERVICES</h3>
+          <h2>A website should be a solution, not a problem</h2>
+
+          <div>
+            <Card type={'service'} />
+            <Card type={'service'} />
+            <Card type={'service'} />
+          </div>
+        </div>
       </div>
+    </div>
   );
 }

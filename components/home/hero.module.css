@@ -21,7 +21,7 @@
     flex-direction: column;
   }
   
-  .hero .content h2 {
+  .hero .content h1 {
     font-size: 48px;
     letter-spacing: 1px;
   }
@@ -59,7 +59,7 @@
   }
   
   @media only screen and (max-width: 650px) {
-    .hero .content h2 {
+    .hero .content h1 {
       font-size: 40px;
       letter-spacing: 0.7px;
     }
@@ -73,7 +73,7 @@
   }
   
   @media only screen and (max-width: 450px) {
-    .hero .content h2 {
+    .hero .content h1 {
       font-size: 30px;
       letter-spacing: 0.7px;
     }

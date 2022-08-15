@@ -1,0 +1,28 @@
+.services {
+    text-align: center;
+}
+
+.services h3 {
+    font-weight: 500;
+    letter-spacing: .2px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.services h2 {
+    font-size: 2.3em;
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 600;
+    letter-spacing: .26px;
+}
+
+.services > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}

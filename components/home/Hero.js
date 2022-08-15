@@ -8,7 +8,7 @@ function Hero() {
     <div className={styles.hero}>
       <div>
         <div className={styles.content}>
-          <h2>Testing this headline</h2>
+          <h1>Testing this headline</h1>
           <p>
             I&apos;m also testing this subtitle too, it&apos;s going to be a
             little longer.
