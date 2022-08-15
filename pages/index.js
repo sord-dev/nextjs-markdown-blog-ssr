@@ -22,11 +22,12 @@ export default function Home() {
       <Hero />
 
       <div className="container">
+      
         <div className={styles.services}>
           <h3>SERVICES</h3>
           <h2>A website should be a solution, not a problem</h2>
 
-          <div>
+          <div className={styles.services_grid}>
             <Card type={"service"} />
             <Card type={"service"} />
             <Card type={"service"} />

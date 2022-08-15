@@ -20,7 +20,7 @@
     letter-spacing: .26px;
 }
 
-.services > div {
+.services .services_grid {
     display: flex;
     flex-wrap: wrap;
     gap: 3em;
