@@ -1,134 +1,100 @@
 /* service section styles */
 
 .services {
-    text-align: center;
+  text-align: center;
 }
 
 .services h3 {
-    font-weight: 500;
-    letter-spacing: .2px;
-    margin: 0;
-    margin-top: 40px;
-    margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .services h2 {
-    font-size: 2.3em;
-    max-width: 500px;
-    margin: 0 auto;
-    font-weight: 600;
-    letter-spacing: .26px;
+  font-size: 2.3em;
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 600;
+  letter-spacing: 0.26px;
 }
 
-.services .services_grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
+.services > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
-
 
 @media only screen and (max-width: 670px) {
-   .services h2 {
+  .services h2 {
     font-size: 1.8em;
     max-width: 375px;
-   }
   }
-
-
-/* project heading styles */
-
-.projectHeading {
-   background-color: rgba(33, 37, 41, .1);
-   position: relative;
-   height: 200px;
 }
 
-.projectHeading > * {
-    opacity: 1;
-    color: #212529;
-}
-
-.projectHeading div {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 2em;
-}
-
-.projectHeading div h2 {
-    font-size: 2.3em;
-    max-width: 700px;
-   
-}
-
-.projectHeading h3 {
-    font-weight: 500;
-    letter-spacing: .2px;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-
-/* note - add responsive styles to this */
-
-.projectHeading::after {
-    content: '';
-    width: 364px;
-    height: 120px;
-    position: absolute;
-    background-color: #E1F2EA;
-    border-radius: 5px;
-    top: -40px;
-    right: 40px;
-}
-
-.projectHeading::before {
-    content: '';
-    width: 215px;
-    height: 120px;
-    position: absolute;
-    background-color: #E1F2EA;
-    border-radius: 5px;
-    bottom: -40px;
-    left: 40px;
-}
-
-@media only screen and (max-width: 1500px) {
-    .projectHeading::before,
-    .projectHeading::after {
-        display: none;
-    }
-  }
-
-  @media only screen and (max-width: 670px) {
-
-    .projectHeading div {
-        font-size: .9em;
-    }
-  
-  }
-
-
-  @media only screen and (max-width: 500px) {
-
-    .projectHeading div {
-        font-size: .8em;
-    }
-  
-  }
 /* project list styles */
 
- .projectList {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 4em;
-    padding: 4em;
- }
+.projectList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4em;
+  padding: 4em;
+}
+
+/* testimonial grid styles */
+
+.testimonial {
+  width: 100%;
+  height: 80vh;
+  background-color: #212529;
+  color: white;
+}
+
+.testimonial {
+  width: 100%;
+  height: 80vh;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.testimonial .title {
+  max-width: 515px;
+  margin: 0 auto;
+}
+
+.testimonial .title h3 {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+.testimonial .title h2 {
+  font-size: 2.3em;
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 600;
+  letter-spacing: 0.26px;
+}
+
+.testimonial .grid {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  height: 80%;
+  align-items: center;
+}
+
+.testimonial .grid span {
+  font-size: 200px;
+
+  font-family: 'Dancing Script', cursive;
+}

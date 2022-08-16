@@ -3,8 +3,12 @@ import styles from "../styles/card.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import infinty from "../public/infinity.svg";
+import quote from "../public/quote.svg";
 
-function Card({ type }) {
+// TODO
+// MAKE THESE A SEPERATE COMPONENT lol
+
+function Card(props) {
   const ServiceCard = () => (
     <div className={styles.serviceCard}>
       <div className={styles.avatar}>
@@ -39,34 +43,72 @@ function Card({ type }) {
     </div>
   );
 
+  const TestimonialCard = () => (
+    <div className={styles.testimonialCard}>
+      <div>
+        <div>
+          <Image
+            src={quote}
+            alt={"testimonial quote image"}
+            width={"38px"}
+            height={"38px"}
+          />
+          <p>
+            Donec semper magna tellus, eu ultrices turpis porta eu. Duis
+            molestie pretium est sit amet sollicitudin. Nullam mollis sed leo ac
+            ultrices. Sed quis efficitur est.
+          </p>
+        </div>
+        <div>
+          <div className={styles.avatar}>
+            <Image
+              src={infinty}
+              height={"100px"}
+              alt={"placeholder service icon"}
+            />
+          </div>
+          <p>Person or Business Name</p>
+        </div>
+      </div>
+    </div>
+  );
+
   const ProjectCard = () => (
     <div className={styles.projectCard}>
-      <div> <h4> Project or Brand Picture </h4> </div>
+      <div>
+        {" "}
+        <h4> Project or Brand Picture </h4>{" "}
+      </div>
       <div>
         <h3>Business/Project Name</h3>
         <p>
-        Vivamus iaculis, tellus a suscipit gravida, nisi augue porta lectus, ac molestie ante tortor sit amet eros. Proin a ligula ex. 
+          Vivamus iaculis, tellus a suscipit gravida, nisi augue porta lectus,
+          ac molestie ante tortor sit amet eros. Proin a ligula ex.
         </p>
         <button>View Website</button>
       </div>
     </div>
   );
 
-  switch (type) {
+  switch (props.type) {
     case "service":
-      return <ServiceCard />
+      return <ServiceCard {...props} />;
       break;
 
     case "project":
-      return <ProjectCard />
+      return <ProjectCard {...props} />;
       break;
 
     case "blog":
-      return <BlogCard />
+      return <BlogCard {...props}/>;
+      break;
+
+    case "testimonial":
+      return <TestimonialCard {...props} />;
       break;
 
     default:
-      return <ServiceCard />
+      return <ServiceCard {...props} />;
       break;
   }
 }

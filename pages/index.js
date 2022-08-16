@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Card from "../components/Card";
+import CustomHeading from "../components/home/CustomHeading";
 import Hero from "../components/home/Hero";
 
 import styles from "../styles/home.module.css";
@@ -22,7 +23,6 @@ export default function Home() {
       <Hero />
 
       <div className="container">
-      
         <div className={styles.services}>
           <h3>SERVICES</h3>
           <h2>A website should be a solution, not a problem</h2>
@@ -35,22 +35,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.projectHeading}>
-        <div>
-          <h3>CLIENT PROJECTS</h3>
-          <h2>
-            I think you should invest in a copywriter, you don&apos;t know what
-            to say yet.
-          </h2>
+      <CustomHeading />
+
+      <div className="container pt-10">
+        <div className={styles.projectList}>
+          <Card type={"project"} />
+          <Card type={"project"} />
         </div>
       </div>
 
-      <div className="container pt-10">
-      <div className={styles.projectList}>
-        <Card type={"project"} />
-        <Card type={"project"} />
+      <div
+      className={styles.testimonial}>
+        <div className={styles.title}>
+          <h3>TESTIMONIALS</h3>
+          <h2>People say the nicest things</h2>
+        </div>
+
+        <div className={styles.grid}>
+          <Card type={'testimonial'} />
+          <Card type={'testimonial'} />
+          <Card type={'testimonial'} />
+        </div>
       </div>
 
+      <div>
+        <h2>blog section</h2>
       </div>
     </div>
   );

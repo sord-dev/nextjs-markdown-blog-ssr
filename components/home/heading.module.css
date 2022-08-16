@@ -1,0 +1,79 @@
+/* project heading styles */
+
+.projectHeading {
+  background-color: rgba(33, 37, 41, 0.1);
+  position: relative;
+  height: 200px;
+}
+
+.projectHeading > * {
+  opacity: 1;
+  color: #212529;
+}
+
+.projectHeading div {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2em;
+}
+
+.projectHeading div h2 {
+  font-size: 2.3em;
+  font-weight: 600;
+  max-width: 700px;
+}
+
+.projectHeading h3 {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* note - add responsive styles to this */
+
+.projectHeading::after {
+  content: "";
+  width: 364px;
+  height: 120px;
+  position: absolute;
+  background-color: #e1f2ea;
+  border-radius: 5px;
+  top: -40px;
+  right: 40px;
+}
+
+.projectHeading::before {
+  content: "";
+  width: 215px;
+  height: 120px;
+  position: absolute;
+  background-color: #e1f2ea;
+  border-radius: 5px;
+  bottom: -40px;
+  left: 40px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .projectHeading::before,
+  .projectHeading::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .projectHeading div {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projectHeading div {
+    font-size: 0.8em;
+  }
+}

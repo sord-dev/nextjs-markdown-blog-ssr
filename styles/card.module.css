@@ -127,4 +127,37 @@
   transform: scale(0.97);
 }
 
+/* testimonial card styles */
+
+.testimonialCard > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.testimonialCard > div div:first-child p {
+  font-size: 1.175em;
+  font-weight: 400;
+  letter-spacing: .2px;
+  line-height: 150%;
+  max-width: 285px;
+}
+
+.testimonialCard > div div:last-child p {
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+.testimonialCard .avatar {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: #e1f2ea;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* blog card styles */
