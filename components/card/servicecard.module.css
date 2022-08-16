@@ -1,0 +1,53 @@
+.serviceCard {
+  width: 265px;
+  height: 291px;
+  background-color: white;
+  margin: 0;
+  padding: 1.2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.serviceCard .avatar {
+  height: 50px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: #e1f2ea;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceCard .content h4,
+.serviceCard .content p {
+  padding: 0;
+  margin: 0;
+}
+
+.serviceCard .content h4 {
+  margin: 0 auto;
+  margin-bottom: 7px;
+  height: 1.4em;
+  max-width: 138px;
+}
+
+.serviceCard .content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.025em;
+}
+
+.serviceCard a {
+  font-weight: 600;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.serviceCard a:hover {
+  text-decoration: underline;
+}

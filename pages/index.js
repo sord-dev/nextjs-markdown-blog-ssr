@@ -1,9 +1,16 @@
 import Head from "next/head";
-import Card from "../components/Card";
-import CustomHeading from "../components/home/CustomHeading";
-import Hero from "../components/home/Hero";
 
+// stylesheet
 import styles from "../styles/home.module.css";
+
+// components
+import Hero from "../components/home/Hero";
+import CustomHeading from "../components/home/CustomHeading";
+import ServiceCard from "../components/Card/ServiceCard";
+import ProjectCard from "../components/card/ProjectCard";
+import TestimonialCard from "../components/card/TestimonialCard";
+import BlogCard from "../components/card/BlogCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,9 +35,9 @@ export default function Home() {
           <h2>A website should be a solution, not a problem</h2>
 
           <div className={styles.services_grid}>
-            <Card type={"service"} />
-            <Card type={"service"} />
-            <Card type={"service"} />
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
           </div>
         </div>
       </div>
@@ -39,27 +46,37 @@ export default function Home() {
 
       <div className="container pt-10">
         <div className={styles.projectList}>
-          <Card type={"project"} />
-          <Card type={"project"} />
+          <ProjectCard />
+          <ProjectCard />
         </div>
       </div>
 
-      <div
-      className={styles.testimonial}>
+      <div className={styles.testimonial}>
         <div className={styles.title}>
           <h3>TESTIMONIALS</h3>
           <h2>People say the nicest things</h2>
         </div>
 
         <div className={styles.grid}>
-          <Card type={'testimonial'} />
-          <Card type={'testimonial'} />
-          <Card type={'testimonial'} />
+          <TestimonialCard />
+          <TestimonialCard />
+          <TestimonialCard />
         </div>
       </div>
 
-      <div>
-        <h2>blog section</h2>
+      <div className={styles.blog}>
+        <div className={styles.title}>
+          <h3>BLOG</h3>
+          <h2>Learn how to grow your business here</h2>
+        </div>
+
+        <div className={styles.grid}>
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
+
+        <Link href={'/blog'}> Read More</Link>
       </div>
     </div>
   );

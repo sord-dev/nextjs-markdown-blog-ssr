@@ -48,16 +48,9 @@
 
 /* testimonial grid styles */
 
-.testimonial {
-  width: 100%;
-  height: 80vh;
-  background-color: #212529;
-  color: white;
-}
 
 .testimonial {
   width: 100%;
-  height: 80vh;
   background-color: #212529;
   color: white;
   text-align: center;
@@ -87,6 +80,7 @@
 
 .testimonial .grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3em;
   height: 80%;
@@ -96,5 +90,53 @@
 .testimonial .grid span {
   font-size: 200px;
 
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
+}
+
+/* blog styles */
+
+.blog {
+  text-align: center;
+  padding: 1em;
+}
+
+.blog a {
+  transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.blog a:hover {
+  text-decoration: underline;
+  opacity: .9;
+}
+
+.blog .title {
+  max-width: 515px;
+  margin: 0 auto;
+}
+.blog .title h3 {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  
+}
+
+.blog .title h2 {
+  font-size: 2.3em;
+
+  margin: 0 auto;
+  font-weight: 600;
+  letter-spacing: 0.26px;
+}
+
+.blog .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  padding: 3em;
+  justify-content: center;
+  align-items: center;
+
 }

@@ -1,0 +1,86 @@
+.blogCard {
+    max-width: 310px;
+    border-radius: 5px;
+    padding-bottom: 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.blogCard .image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E1F2EA;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    border-radius: 5px 5px 0 0;
+}
+
+.blogCard .image:hover {
+   background-color: #ceebdd;
+}
+
+/* TEMP */
+.blogCard .image h3{
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+
+/* card content */
+
+.blogCard .content {
+    padding: 1.4em;
+}
+
+.blogCard .main_text > *,
+.blogCard .meta div > * {
+    margin: 0;
+    padding: 0;
+}
+
+.blogCard .main_text {
+    text-align: left;
+    max-width: 285px;
+}
+
+.blogCard .main_text h4{
+    font-size: 1.2em;
+    margin: 7px 0;
+}
+
+
+.blogCard .main_text p:first-child{
+    font-size: .8em;
+    opacity: .9;
+    font-weight: 600;
+}
+
+.blogCard .main_text p:last-child{
+    font-size: 1em;
+    opacity: .9;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 140%;
+}
+
+.blogCard .meta{
+   display: flex;
+   gap: .8em;
+   margin-top: 10px;
+}
+
+.blogCard .meta div:first-child{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: #E1F2EA;
+ }
+
+ .blogCard .meta div > h4{
+    font-size: .9em;
+  }
+
+  .blogCard .meta div > p{
+    font-size: .89em;
+  }
