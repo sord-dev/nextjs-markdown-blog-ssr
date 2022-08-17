@@ -63,20 +63,33 @@ export default function Home() {
           <TestimonialCard />
         </div>
       </div>
+      <div className="container pt-10">
+        <div className={styles.blog}>
+          <div className={styles.title}>
+            <h3>BLOG</h3>
+            <h2>Learn how to grow your business here</h2>
+          </div>
 
-      <div className={styles.blog}>
-        <div className={styles.title}>
-          <h3>BLOG</h3>
-          <h2>Learn how to grow your business here</h2>
+          <div className={styles.grid}>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+          </div>
+
+          <Link href={"/blog"}> Read More </Link>
         </div>
 
-        <div className={styles.grid}>
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+        <div className={styles.contactCard}>
+        
+        <div>
+          <h4>Get in touch</h4>
+          <p>Want to have a talk about what your website could be missing? Give me an email!</p>
         </div>
 
-        <Link href={'/blog'}> Read More</Link>
+        <div>
+          <button>Contact</button>
+        </div>
+        </div>
       </div>
     </div>
   );

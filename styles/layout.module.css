@@ -104,3 +104,18 @@
 .footer span {
   color: #f3f6f8;
 }
+
+.footer .links img {
+  opacity: .9;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer .links img:first-child {
+  opacity: .6;
+  
+}
+
+.footer .links img:hover {
+  opacity: 1;
+}

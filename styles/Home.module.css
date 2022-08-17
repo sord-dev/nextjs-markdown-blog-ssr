@@ -48,7 +48,6 @@
 
 /* testimonial grid styles */
 
-
 .testimonial {
   width: 100%;
   background-color: #212529;
@@ -101,12 +100,12 @@
 }
 
 .blog a {
-  transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .blog a:hover {
   text-decoration: underline;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .blog .title {
@@ -120,7 +119,6 @@
   margin-top: 40px;
   margin-bottom: 10px;
   opacity: 0.9;
-  
 }
 
 .blog .title h2 {
@@ -138,5 +136,56 @@
   padding: 3em;
   justify-content: center;
   align-items: center;
+}
 
+/* contact card styles */
+
+.contactCard {
+  max-width: 900px ;
+padding: 4em 2em;
+  margin: 30px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  border-radius: 5px;
+}
+
+.contactCard > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+.contactCard > div:first-child > * {
+  margin: 0;
+  padding: 0;
+}
+
+.contactCard > div:first-child h4 {
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.contactCard > div:first-child p {
+  font-size: 1.4em;
+  font-weight: 400;
+  max-width: 550px;
+  letter-spacing: 0.3px;
+}
+
+@media only screen and (max-width: 970px) {
+  .contactCard {
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .contactCard {
+    flex-direction: column;
+    margin: 30px;
+  }
 }

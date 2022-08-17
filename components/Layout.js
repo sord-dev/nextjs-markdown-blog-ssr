@@ -1,16 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+
+// styles
 import styles from "../styles/layout.module.css";
-import hamburger from "../public/hamburger.svg";
+
+// images
 import logo from "../public/logo.svg";
+import githubIcon from "../public/github_logo.svg";
+import instagramIcon from "../public/instagram_logo.svg";
+
+// components
+import hamburger from "../public/hamburger.svg";
 import MobileMenu from "./MobileMenu";
 
 function Layout({ children }) {
   const [click, setClick] = useState(false);
 
   const handleHamburgerClick = () => setClick((prev) => !prev);
-
 
   return (
     <>
@@ -54,9 +61,33 @@ function Layout({ children }) {
 
       <div className={styles.footer}>
         <p> &copy; 2022 by Stefan Syrett </p>
-        <div>
-          <span>mediaIcon</span>
-          <span>mediaIcon</span>
+        <div className={styles.links}>
+          <Link href={"https://github.com/sord-dev"} target={"_blank"}>
+            <div>
+              <Image
+                src={githubIcon}
+                layout={"fixed"}
+                height={"30px"}
+                width={"30px"}
+                alt="logo image"
+              />
+            </div>
+          </Link>
+
+          <Link
+            href={"https://www.instagram.com/explore/tags/websites/"}
+            target={"_blank"}
+          >
+            <div>
+              <Image
+                src={instagramIcon}
+                layout={"fixed"}
+                height={"30px"}
+                width={"30px"}
+                alt="logo image"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </>
