@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import styles from "../styles/404.module.css";
+import styles from "../styles/pages/404.module.css";
 
 function Error() {
   return (

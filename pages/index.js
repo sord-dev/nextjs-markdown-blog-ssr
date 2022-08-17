@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // stylesheet
-import styles from "../styles/home.module.css";
+import styles from "../styles/pages/home.module.css";
 
 // components
 import Hero from "../components/home/Hero";
@@ -86,9 +86,12 @@ export default function Home() {
           <p>Want to have a talk about what your website could be missing? Give me an email!</p>
         </div>
 
+
+        <Link href={'/contact'}>
         <div>
           <button>Contact</button>
         </div>
+        </Link>
         </div>
       </div>
     </div>
