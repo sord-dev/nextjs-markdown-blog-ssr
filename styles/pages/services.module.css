@@ -1,0 +1,38 @@
+.services {
+    padding: 3em;
+    color: #212529;
+}
+
+.services .title {
+  text-align: center;
+}
+
+.services .title h1,
+.services .title h2 {
+  margin: 0;
+}
+
+.services .title h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: .5px;
+}
+
+.services .title h2 {
+  font-size: 1.4em;
+  font-weight: 400;
+  letter-spacing: .1px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.services .content  {
+   height: 60vh;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 700px);
+   justify-items: center;
+   align-items: center;
+   margin-top: 30px;
+  }
