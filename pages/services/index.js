@@ -75,13 +75,6 @@ function services() {
   );
 }
 
-export async function getStaticProps() {
 
-  return {
-    props: {
-      posts: 'the posts'
-    }
-  }
-}
 
 export default services;

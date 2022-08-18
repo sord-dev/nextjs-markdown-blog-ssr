@@ -1,6 +1,11 @@
-# DL Sorting Script
+---
+title: 'test-script'
+date: '18 Aug 2022'
+excerpt: 'his will take all your download folder files and sort them based on their filename extention. (eg. ".exe" or ".jpg").'
+---
 
-*a download folder sorting script*
+# DL Sorting Script
+A download folder sorting script
 
 ## Description
 
@@ -8,9 +13,9 @@ My download folder gets constantly cluttered and it dawned on me that I'm able t
 
 ## Prerequirements
 
-**make sure to create three directories before running the script**
+**Make sure to create these three directories before running the script!!**
 
-in your **documents folder** create:
+In your **documents folder** create:
 
   1. Docs - for .pdf, .doc, .zip, .log, .psd and .rar files
   
