@@ -11,6 +11,7 @@ import ProjectCard from "../components/card/ProjectCard";
 import TestimonialCard from "../components/card/TestimonialCard";
 import BlogCard from "../components/card/BlogCard";
 import Link from "next/link";
+import ContactCard from "../components/card/ContactCard";
 
 export default function Home() {
   return (
@@ -79,20 +80,7 @@ export default function Home() {
           <Link href={"/blog"}> Read More </Link>
         </div>
 
-        <div className={styles.contactCard}>
-        
-        <div>
-          <h4>Get in touch</h4>
-          <p>Want to have a talk about what your website could be missing? Give me an email!</p>
-        </div>
-
-
-        <Link href={'/contact'}>
-        <div>
-          <button>Contact</button>
-        </div>
-        </Link>
-        </div>
+        <ContactCard />
       </div>
     </div>
   );

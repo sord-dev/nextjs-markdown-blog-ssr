@@ -31,7 +31,7 @@ function services() {
         </div>
 
         <div className={styles.content}>
-          {/* for each card's link to work, make a file at ./pages/services that is LOWERCASE AND HYPHANATED. Eg. Web Development = web-development.js // Web Design = web-design.js */}
+          {/* for each card's link to work, make a react component file at -- ./pages/services -- that is LOWERCASE AND HYPHANATED. Eg. Web Development = web-development.js // Web Design = web-design.js */}
           <ServiceCard2
             title={"Web Development"}
             subtitle={

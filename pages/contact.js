@@ -33,7 +33,6 @@ function Contact() {
       return { error: { message: "message is missing" } };
   };
 
-  // ADD FORM VALIDATION + connection to email
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const formData = { name, email, message };
