@@ -22,12 +22,30 @@ function Contact() {
     setMessage("");
   };
 
+  const validate = (formData) => {
+    if (formData.name == "" || formData.name == null)
+      return { error: { message: "name is missing" } };
+    if (formData.email == "" || formData.email == null)
+      return { error: { message: "email is missing" } };
+    if (!formData.email.includes('@') || !formData.email.includes('.'))
+      return { error: { message: "email is incorrect" } };
+    if (formData.message == "" || formData.message == null)
+      return { error: { message: "message is missing" } };
+  };
+
   // ADD FORM VALIDATION + connection to email
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const formData = { name, email, message };
-    console.log(formData);
-    _cleardata();
+
+    if (!validate(formData)) {
+      console.log(formData);
+      _cleardata();
+    }
+    else{
+      console.log(validate(formData));
+    }
+    
   };
 
   return (

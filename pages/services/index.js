@@ -3,45 +3,10 @@ import React from "react";
 import ServiceCard2 from "../../components/card/ServiceCard2";
 import styles from "../../styles/pages/services.module.css";
 
-const DATA = [
-  {
-      title: "Web Development",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem.",
-      buttonText: "Read More",
-      _buttonLink: "services/web-development",
-   
-  },
-
-  {
-    
-      title: "Web Design",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem.",
-      buttonText: "Read More",
-      _buttonLink: "services/web-design",
-  },
-
-  {
-      title: "SEO Services",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem.",
-      buttonText: "Read More",
-      _buttonLink: "services/SEO",
-   
-   
-  },
-
-  {
-    title: "Website Audits",
-    subtitle:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem.",
-    buttonText: "Read More",
-    _buttonLink: "services/website-audits",
-  },
-];
-
 function services() {
+  //TODO 
+  // ADD RESPONSIVITY!!!
+
   return (
     <div className={styles.services}>
       <Head>
@@ -66,15 +31,35 @@ function services() {
         </div>
 
         <div className={styles.content}>
-          {DATA.map((service) => (
-            <ServiceCard2 key={service.title} service={service} />
-          ))}
+          {/* for each card's link to work, make a file at ./pages/services that is LOWERCASE AND HYPHANATED. Eg. Web Development = web-development.js // Web Design = web-design.js */}
+          <ServiceCard2
+            title={"Web Development"}
+            subtitle={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
+            }
+          />
+          <ServiceCard2
+            title={"Web Design"}
+            subtitle={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
+            }
+          />
+          <ServiceCard2
+            title={"SEO Services"}
+            subtitle={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
+            }
+          />
+          <ServiceCard2
+            title={"Website Audits"}
+            subtitle={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
+            }
+          />
         </div>
       </div>
     </div>
   );
 }
-
-
 
 export default services;
