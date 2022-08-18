@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 //images
 import githubLogo from "../public/github_logo_black.svg";
-import instagramLogo from "../public/instagram_logo_black.svg";
+import emailLogo from "../public/email_icon_black.svg";
 import phoneLogo from "../public/phone_icon.svg";
 
 //styles
@@ -50,7 +50,7 @@ function Contact() {
         </div>
         <div className={styles.group}>
           <div className={styles.media_icons}>
-            <Link href={"https://github.com/sord-dev"}>
+            <Link href={"https://github.com/sord-dev"} target={"_blank"}>
               <div>
                 {" "}
                 <Image
@@ -58,25 +58,21 @@ function Contact() {
                   width={"80px"}
                   height={"80px"}
                   alt={"github icon"}
-                  color={"black"}
                 />{" "}
               </div>
             </Link>
-            <Link
-              href={"https://www.instagram.com/explore/tags/website/?hl=en"}
-            >
+            <Link href={"mailto:stefansyrett17@gmail.com"} target={"_blank"}>
               <div>
                 {" "}
                 <Image
-                  src={instagramLogo}
+                  src={emailLogo}
                   width={"80px"}
                   height={"80px"}
                   alt={"instagram icon"}
-                  color={"black"}
                 />{" "}
               </div>
             </Link>
-            <Link href={"tel:07932893431"}>
+            <Link href={"tel:07932893431"} target={"_blank"}>
               <div>
                 {" "}
                 <Image
@@ -84,7 +80,6 @@ function Contact() {
                   width={"80px"}
                   height={"80px"}
                   alt={"github icon"}
-                  color={"black"}
                 />{" "}
               </div>
             </Link>

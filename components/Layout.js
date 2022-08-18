@@ -8,7 +8,7 @@ import styles from "../styles/layout.module.css";
 // images
 import logo from "../public/logo.svg";
 import githubIcon from "../public/github_logo.svg";
-import instagramIcon from "../public/instagram_logo.svg";
+import emailLogo from "../public/email_icon.svg";
 
 // components
 import hamburger from "../public/hamburger.svg";
@@ -75,12 +75,12 @@ function Layout({ children }) {
           </Link>
 
           <Link
-            href={"https://www.instagram.com/explore/tags/websites/"}
+            href={"mailto:stefansyrett17@gmail.com"}
             target={"_blank"}
           >
             <div>
               <Image
-                src={instagramIcon}
+                src={emailLogo}
                 layout={"fixed"}
                 height={"30px"}
                 width={"30px"}
