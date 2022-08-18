@@ -17,6 +17,13 @@ a {
 
 .container {
   max-width: 1440px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.containertext {
+  max-width: 1200px;
+  padding: 1.2em 2em;
   margin: 0 auto;
 }
 

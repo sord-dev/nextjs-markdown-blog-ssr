@@ -19,7 +19,7 @@ function ServiceCard() {
       </p>
     </div>
 
-    <Link href={"/"}>Read More</Link>
+    <Link href={"/services"}>Read More</Link>
   </div>
   )
 }

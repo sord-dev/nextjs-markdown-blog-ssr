@@ -1,18 +1,19 @@
+import Link from 'next/link'
 import React from 'react'
 import styles from './servicecard2.module.css'
 
-function ServiceCard2() {
+function ServiceCard2({ service }) {
   return (
     <div className={styles.serviceCard}>
 
         <div>
-            <span>icon?</span>
+            <span>icon</span>
         </div>
 
         <div>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem.</p>
-            <button>Read More</button>
+            <h3>{service.title}</h3>
+            <p>{service.subtitle}</p>
+            <Link href={service._buttonLink}><button>{service.buttonText}</button></Link>
         </div>
     </div>
   )
