@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import ServiceCard2 from "../../components/card/ServiceCard2";
-import styles from "../../styles/pages/services.module.css";
+import styles from "../../styles/pages/services/services.module.css";
 
 function services() {
   //TODO 
@@ -10,7 +10,7 @@ function services() {
   return (
     <div className={styles.services}>
       <Head>
-        <title>My Services</title>
+        <title>sord-dev | Services </title>
         <meta
           name="description"
           content="The services I provide as a Freelancer."

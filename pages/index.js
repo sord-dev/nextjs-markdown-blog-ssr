@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Stefan Syrett - Freelance Web Design and Development</title>
+        <title>sord-dev | Freelance Web Design and Development</title>
         <meta
           name="description"
           content="Freelance Web Designer/Developer based in London UK. Providing SEO, Web Design and Development services."

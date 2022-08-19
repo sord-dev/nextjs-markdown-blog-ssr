@@ -50,7 +50,7 @@ function Contact() {
   return (
     <div>
       <Head>
-        <title>Contact Me!</title>
+        <title>sord-dev | Contact</title>
         <meta
           name="description"
           content="Want me to rate your website? Get in touch with me!"

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/pages/servicepage.module.css";
+import styles from "../../styles/pages/services/servicepage.module.css";
 import ContactCard from "../../components/card/ContactCard";
 
 function webDevelopment() {

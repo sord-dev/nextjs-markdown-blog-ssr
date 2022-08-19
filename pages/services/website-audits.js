@@ -1,6 +1,6 @@
 import React from "react";
 import ContactCard from "../../components/card/ContactCard";
-import styles from "../../styles/pages/servicepage.module.css";
+import styles from "../../styles/pages/services/servicepage.module.css";
 
 function webDevelopment() {
   return (
