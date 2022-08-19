@@ -4,7 +4,7 @@
   background-color: #e1f2ea;
   display: flex;
   align-items: center;
-  
+
   border-radius: 5px;
   color: #212529;
 }
@@ -12,8 +12,8 @@
 .serviceCard div:first-child {
   width: 300px;
   height: 100%;
-  border-radius: 5px;
-  transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  border-radius: 5px 0 0 5px;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 
   display: flex;
   align-items: center;
@@ -22,13 +22,14 @@
 }
 
 .serviceCard div:first-child:hover {
-    background-color: #ceebdd;
- }
+  background-color: #ceebdd;
+}
 
 .serviceCard div:last-child {
   padding: 1em;
   background-color: #fff;
   height: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
 .serviceCard div:last-child h3 {
@@ -44,7 +45,7 @@
   line-height: 150%;
   letter-spacing: 0.1px;
   margin-bottom: 15px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .serviceCard div:last-child button {
@@ -56,4 +57,50 @@
 
 .serviceCard div:last-child button:hover {
   transform: scale(0.97);
+}
+
+@media only screen and (max-width: 780px) {
+  .serviceCard {
+    max-width: 400px;
+    flex-direction: column;
+  }
+
+  .serviceCard div:last-child {
+    border-radius: 5px;
+  }
+
+  .serviceCard div:first-child {
+    display: none;
+  }
+
+  .serviceCard div:last-child button {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .serviceCard {
+    max-width: 300px;
+  }
+
+  .serviceCard div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .serviceCard div:last-child {
+    border-radius: 5px;
+  }
+
+  .serviceCard div:first-child {
+    display: none;
+  }
+
+  .serviceCard div:last-child button {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }

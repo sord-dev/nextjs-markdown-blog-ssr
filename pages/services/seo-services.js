@@ -10,7 +10,7 @@ function SEO() {
         <title>SEO Services</title>
         <meta
           name="description"
-          content="Freelance SEO Services to get more leads"
+          content="Freelance SEO Services to get more leads."
         />
         <meta
           name="keywords"
