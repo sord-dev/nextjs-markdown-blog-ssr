@@ -32,11 +32,11 @@ Cras dignissim rhoncus sem, scelerisque sodales diam semper eget. Donec id molli
 
 Praesent mi tortor, tincidunt a viverra a, varius sed nibh. Donec finibus lectus ac risus sodales, nec feugiat nulla condimentum. Nam id libero sit amet augue tristique eleifend quis ac risus. Mauris semper quis lacus non mollis. Proin eget ornare nulla, eu commodo metus. Duis sit amet egestas urna. Proin sit amet dapibus dui, vel feugiat odio. Fusce ac efficitur tellus, et accumsan lectus. Etiam accumsan eu dui eget ultrices. Quisque at interdum sem. Cras quis purus non nibh egestas ornare. Fusce vel sodales magna.
 
-### Another Header 3. Here goes a blockquote:
+### Another Header 3. Here goes a blockquote
 
 > Aliquam erat volutpat. Nunc sagittis in nibh non ullamcorper. Pellentesque nec cursus massa. Praesent non pellentesque lacus, elementum consectetur massa. Donec scelerisque ex dui, ut tristique sapien mollis eu. Suspendisse scelerisque tempor nisl, vitae dapibus leo tincidunt porttitor. Ut cursus, tortor eget auctor mattis, purus sem placerat ipsum, id consectetur ligula elit vitae erat. Integer vel turpis sit amet lectus ultrices hendrerit eu a purus. Morbi ac faucibus diam. In ut tempus metus. Praesent posuere ultrices arcu eu vestibulum. Quisque iaculis ex eu sodales blandit. Morbi consectetur quam sem, a egestas purus pellentesque eget.
 
-#### H4 with another blockquote:
+#### H4 with another blockquote
 
 > Maecenas eu **sapien placerat**, ornare eros eu, rutrum velit. **Nam tincidunt arcu libero**, laoreet pulvinar lectus sodales non. Cras ornare tincidunt tellus, id ultrices nisi sagittis aliquam. **Nulla euismod faucibus libero eu egestas**. Donec eget porttitor est, a ullamcorper augue. *Curabitur eleifend dui commodo* ante iaculis eleifend. `Fusce ut tellus ultrices`, aliquet ex vel, hendrerit enim.
 
@@ -56,13 +56,6 @@ Donec ornare eu mi at egestas. Suspendisse potenti. Aliquam quis bibendum libero
 
 Integer ultrices tellus eu nisi posuere dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tempor augue. Sed dapibus, sem vel hendrerit condimentum, justo nunc accumsan nulla, quis consequat sem velit eget sem. Praesent laoreet, mi vitae aliquam iaculis, enim urna dictum ligula, nec lacinia felis lectus sit amet mauris. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur posuere augue sed leo consequat sodales. Morbi quis aliquam purus. Curabitur diam est, tristique aliquam massa in, bibendum sollicitudin turpis.
 
-## Another header 2. Lets try a code block below (three backticks):
-
-Maecenas efficitur ultricies nisl sit amet iaculis. Aliquam ac tincidunt dolor, at dignissim magna. Nam eget velit at ligula tempor pellentesque vel mollis purus. Quisque bibendum nisl at convallis tempor. Aliquam vestibulum arcu eu lacus lobortis, finibus tincidunt ipsum condimentum. Donec in metus mauris. Curabitur nisl lectus, dapibus eu dui id, tincidunt mollis nibh.
-
-```
-Fusce eleifend eros vitae purus ultricies imperdiet. Pellentesque congue orci magna, eget placerat arcu mollis nec. Donec imperdiet velit vitae leo volutpat, vitae pulvinar felis volutpat. Proin turpis arcu, elementum vel neque vel, tempus luctus metus. Aliquam vulputate imperdiet ipsum sed tempus. Ut venenatis purus nec nisl aliquam pulvinar tincidunt eget libero. Morbi non ultrices justo. Vestibulum varius volutpat odio ut placerat.
-```
 
 Mauris eu neque sed lectus luctus accumsan nec id lacus. Sed et tempus felis. Integer quis orci quis metus pharetra mollis. Sed ultricies est lorem, a tempus massa auctor sit amet. Vivamus tristique accumsan convallis. Pellentesque eleifend tortor rutrum risus vehicula, at gravida massa consequat. Nam tempor vitae diam eget mollis. Ut tempor ipsum mauris, vel dapibus erat pharetra at. Cras pretium risus ac augue porta, et finibus felis cursus. Quisque ut finibus orci, et lobortis nibh. Donec euismod, magna vestibulum facilisis vehicula, leo est ullamcorper sapien, id molestie libero quam eu eros. Duis nec dictum enim, ut convallis augue. Donec aliquet, libero nec luctus maximus, arcu neque pharetra erat, vel finibus ipsum arcu quis massa.
 
@@ -75,6 +68,7 @@ Quisque nibh ante, faucibus id tellus at, porttitor consectetur ex. Praesent vit
 Sed ac lacinia leo, eget pulvinar mi. Praesent sollicitudin mi vel ante mollis, a rhoncus felis interdum. Phasellus et tellus velit. Pellentesque sed hendrerit mauris. Nulla ultricies purus non fermentum consequat. Phasellus luctus, mauris id dignissim vulputate, eros odio pharetra nunc, at bibendum purus augue ut est. Etiam ornare magna faucibus, consectetur justo in, vulputate nulla. Vestibulum varius sem sit amet condimentum commodo.
 
 ## Another H2 announcing test of Markdown Extra footnotes
+
 Mauris vitae sagittis eros[^1]. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam dapibus sodales placerat. Fusce scelerisque elit in dui congue ullamcorper[^2]. Etiam aliquet risus id leo pharetra eleifend. Donec scelerisque imperdiet nisl in lobortis. Quisque pellentesque justo sit amet est pretium tincidunt ut non odio[^3]. Sed dictum porta nisi non mattis. Nulla dictum ante neque, sit amet aliquet lectus consectetur ornare. Duis sollicitudin tincidunt augue, eu blandit eros pulvinar eget[^4].
 
 Nunc nisi arcu, fringilla sit amet placerat nec, dictum rutrum ex. Ut neque ligula, ornare id neque vel, porttitor aliquet nulla. Pellentesque posuere pulvinar pulvinar. Fusce fringilla, eros id congue porta, ante libero auctor nunc, quis ullamcorper erat quam non mi. Sed porta, leo ut hendrerit luctus, diam velit rhoncus leo, vel porttitor nulla urna non diam. Morbi tincidunt id nibh quis ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
@@ -153,12 +147,17 @@ Duis varius, erat vel maximus semper, diam eros pellentesque ligula, eu bibendum
 
 Nullam purus nibh, condimentum ut sodales sit amet, sodales non massa. Aenean sit amet ante nec nisi rhoncus rutrum. Vestibulum a efficitur nunc. Nunc ullamcorper eget eros ac tincidunt. Sed tristique pulvinar diam nec consequat. Curabitur viverra tortor ut metus pharetra posuere et non eros. Ut vestibulum suscipit dictum. Nulla dui lectus, egestas id nunc a, bibendum iaculis quam. Duis eu imperdiet urna.
 
-# Header 1. Lets try the headers altogether.
+# Header 1. Lets try the headers altogether
+
 ## This is header 2
+
 ### And this is the header 3
+
 #### This is the header 4
-##### And this is the header 5.
-###### LO! This is a header 6.
+
+##### And this is the header 5
+
+###### LO! This is a header 6
 
 Nunc consectetur, neque ut tincidunt condimentum, mi erat semper lacus, et consectetur urna mauris at lorem. Nunc velit risus, vestibulum eget nibh nec, faucibus facilisis velit. In hac habitasse platea dictumst. Praesent interdum erat a quam facilisis vehicula. Nullam vitae augue libero. Suspendisse vitae leo eros. Nam finibus mattis magna ac molestie. Pellentesque condimentum tincidunt blandit. Duis sed dui mollis, auctor ipsum a, vulputate lorem. Aenean id viverra elit. Aenean quis lorem ut mauris vehicula rhoncus. Nunc massa lorem, aliquam a sodales eu, fringilla vitae lectus. Nam at quam sed eros accumsan feugiat ac quis risus. Proin eget ligula eros.
 
@@ -176,8 +175,8 @@ Donec vitae augue nulla. Maecenas sit amet justo interdum, euismod justo sed, vi
 
 Term 1
 
-:   This is a definition with two paragraphs. Lorem ipsum 
-    dolor sit amet, consectetuer adipiscing elit. Aliquam 
+:   This is a definition with two paragraphs. Lorem ipsum
+    dolor sit amet, consectetuer adipiscing elit. Aliquam
     hendrerit mi posuere lectus.
 
     Vestibulum enim wisi, viverra nec, fringilla in, laoreet

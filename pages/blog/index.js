@@ -2,20 +2,19 @@ import Head from "next/head";
 import React from "react";
 import styles from "../../styles/pages/blog/blog.module.css";
 import BlogCard from "../../components/card/BlogCard";
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
 function Blog(props) {
-    const { posts } = props
-    posts.map(post => console.log(post))
+  const { posts } = props;
   return (
     <div className={styles.blog}>
       <Head>
         <title>sord-dev | Blog </title>
         <meta
           name="description"
-          content="Freelance SEO Services to get more leads."
+          content="Information to grow your small business and get more leads."
         />
         <meta
           name="keywords"
@@ -40,36 +39,43 @@ function Blog(props) {
         </div>
 
         <div className={styles.content}>
-          
-          {posts.map(post => <BlogCard key={post.slug} slug={post.slug} data={post.frontmatter} />)}
-
+          {posts.map((post) => (
+            <BlogCard
+              key={post.slug}
+              slug={post.slug}
+              data={post.frontmatter}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
-} 
+}
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('markdown'))
+  const files = fs.readdirSync(path.join("markdown"));
 
   const posts = files.map((filename) => {
-    const slug = filename.replace('.md', '')
+    const slug = filename.replace(".md", "");
 
-    const markdownWithMeta = fs.readFileSync(path.join('markdown', filename), 'utf-8')
+    const markdownWithMeta = fs.readFileSync(
+      path.join("markdown", filename),
+      "utf-8"
+    );
 
-    const {data:frontmatter} = matter(markdownWithMeta)
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
       slug,
-      frontmatter
-    }
-  })
-  
+      frontmatter,
+    };
+  });
+
   return {
     props: {
       posts: posts,
     },
-  }
+  };
 }
 
 export default Blog;

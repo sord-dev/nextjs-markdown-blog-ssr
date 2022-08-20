@@ -1,0 +1,60 @@
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.meta div:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e1f2ea;
+}
+
+.meta div > h4 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.meta div > p {
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+.sm div:first-child {
+  width: 20px;
+  height: 20px;
+}
+
+.sm div h4 {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.sm div p {
+  font-size: 0.8em;
+}
+
+.meta .lg div {
+    align-items: flex-end;
+}
+
+.lg div:first-child {
+  width: 60px;
+  height: 60px;
+}
+
+.lg div h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.lg div p {
+  font-size: 1em;
+  margin-top: 3px;
+}

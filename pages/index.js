@@ -30,6 +30,7 @@ export default function Home({posts}) {
           name="keywords"
           content="freelancer, freelancer london, responsive web design, local web design, web designers near me, freelance web developer, local web developer, web developer, seo services, local seo services"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
 
       <Hero />

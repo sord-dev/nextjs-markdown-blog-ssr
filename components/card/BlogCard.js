@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import MetaData from "../MetaData";
 import styles from "./blogcard.module.css";
 
 function BlogCard({data, slug}) {
@@ -21,16 +22,7 @@ function BlogCard({data, slug}) {
           </p>
         </div>
 
-        <div className={styles.meta}>
-          <div>
-            
-          </div>
-
-          <div>
-            <h4>{data.author}</h4>
-            <p>{data.date}</p>
-          </div>
-        </div>
+        <MetaData author={data.author}  date={data.date} size={'md'} />
       </div>
     </div>
   );
