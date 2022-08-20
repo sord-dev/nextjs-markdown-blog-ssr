@@ -2,19 +2,20 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../public/logo.svg";
 import styles from "./hero.module.css";
+import Link from "next/link";
 
 function Hero() {
   return (
     <div className={styles.hero}>
       <div>
         <div className={styles.content}>
-          <h1>Testing this headline</h1>
+          <h1>Get more clients with a well designed, optimised website.</h1>
           <p>
             I&apos;m also testing this subtitle too, it&apos;s going to be a
             little longer.
           </p>
 
-          <button> Main CTA </button>
+          <Link href={'/contact'}><button> Contact Me </button></Link>
         </div>
 
         <div className={styles.image}>

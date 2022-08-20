@@ -7,15 +7,16 @@ function BlogCard({data, slug}) {
   return (
     <div className={styles.blogCard}>
         <Link href={`/blog/${slug}`}>
+        
       <div className={styles.image}>
         {/* thumbnail */}
-        <h3>Post Picture</h3>
+        <img src={data.thumbnail} alt={`${data.title} post image`} />
       </div>
         </Link>
 
       <div className={styles.content}>
         <div className={styles.main_text}>
-          <p>{data.TOP}</p>
+          <span>{data.TOP}</span>
           <h4><Link href={`/blog/${slug}`}>{data.title}</Link></h4>
           <p>
             {data.excerpt}

@@ -1,9 +1,11 @@
 ---
-title: 'test-script'
+title: 'Python Project markdown sample'
 author: 'sord-dev'
 date: '18 Aug 2022'
 excerpt: 'This will take all your download folder files and sort them based on their filename extention. (eg. ".exe" or ".jpg").'
 TOP: 'test'
+thumbnail: '/post-images/python-image.jpg'
+thumbnailSource: 'unsplash.com'
 ---
 
 # DL Sorting Script

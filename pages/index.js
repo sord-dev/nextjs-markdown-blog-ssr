@@ -13,11 +13,11 @@ import TestimonialCard from "../components/card/TestimonialCard";
 import BlogCard from "../components/card/BlogCard";
 import ContactCard from "../components/card/ContactCard";
 
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
-export default function Home({posts}) {
+export default function Home({ posts }) {
   return (
     <div>
       <Head>
@@ -30,7 +30,10 @@ export default function Home({posts}) {
           name="keywords"
           content="freelancer, freelancer london, responsive web design, local web design, web designers near me, freelance web developer, local web developer, web developer, seo services, local seo services"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
 
       <Hero />
@@ -41,14 +44,29 @@ export default function Home({posts}) {
           <h2>A website should be a solution, not a problem</h2>
 
           <div className={styles.services_grid}>
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            <ServiceCard
+              service={"Web Development"}
+              description={
+                "All my websites are designed with an inherent understanding of brand communication, information architecture, accessibility and usability"
+              }
+            />
+            <ServiceCard
+              service={"SEO Services"}
+              description={
+                "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
+              }
+            />
+            <ServiceCard
+              service={"Website Audits"}
+              description={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
+              }
+            />
           </div>
         </div>
       </div>
 
-      <CustomHeading />
+      <CustomHeading title={"I keep brand image first and foremost in my design process."} />
 
       <div className="container pt-10">
         <div className={styles.projectList}>
@@ -77,9 +95,13 @@ export default function Home({posts}) {
           </div>
 
           <div className={styles.grid}>
-
-          {posts.map(post => <BlogCard key={post.slug} slug={post.slug} data={post.frontmatter} />)}
-            
+            {posts.map((post) => (
+              <BlogCard
+                key={post.slug}
+                slug={post.slug}
+                data={post.frontmatter}
+              />
+            ))}
           </div>
 
           <Link href={"/blog"}> Read More </Link>
@@ -91,27 +113,28 @@ export default function Home({posts}) {
   );
 }
 
-
-
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('markdown'))
+  const files = fs.readdirSync(path.join("markdown"));
 
   const posts = files.map((filename) => {
-    const slug = filename.replace('.md', '')
+    const slug = filename.replace(".md", "");
 
-    const markdownWithMeta = fs.readFileSync(path.join('markdown', filename), 'utf-8')
+    const markdownWithMeta = fs.readFileSync(
+      path.join("markdown", filename),
+      "utf-8"
+    );
 
-    const {data:frontmatter} = matter(markdownWithMeta)
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
       slug,
-      frontmatter
-    }
-  })
-  
+      frontmatter,
+    };
+  });
+
   return {
     props: {
       posts: posts,
     },
-  }
+  };
 }

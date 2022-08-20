@@ -7,7 +7,7 @@ import path from "path";
 import matter from "gray-matter";
 
 function Blog(props) {
-  const { posts } = props;
+  const { posts, catagories } = props;
   return (
     <div className={styles.blog}>
       <Head>
@@ -31,14 +31,14 @@ function Blog(props) {
       </div>
 
       <div className="container">
-        {/* replace with catagories */}
-        <div style={{ textAlign: "center" }}>
-          <h3>
-            <code>Catagories Placeholder</code>
-          </h3>
+        {/* replace styles and add functionality */}
+        <div className={styles.catagories}>
+            {catagories.map(catagory =>  <button key={catagory.text}>{catagory.text}</button>)}
         </div>
 
         <div className={styles.content}>
+
+
           {posts.map((post) => (
             <BlogCard
               key={post.slug}
@@ -63,7 +63,7 @@ export async function getStaticProps() {
       "utf-8"
     );
 
-    const { data: frontmatter } = matter(markdownWithMeta);
+    const { data:frontmatter } = matter(markdownWithMeta);
 
     return {
       slug,
@@ -71,9 +71,23 @@ export async function getStaticProps() {
     };
   });
 
+  const catagories = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("markdown", filename),
+      "utf-8"
+    );
+
+    const { data:frontmatter } = matter(markdownWithMeta);
+
+    return {
+      text: frontmatter.TOP
+    };
+  });
+
   return {
     props: {
-      posts: posts,
+      posts,
+      catagories
     },
   };
 }

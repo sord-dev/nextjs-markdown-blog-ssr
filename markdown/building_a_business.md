@@ -4,6 +4,8 @@ author: 'sord-dev'
 date: '20 Aug 2022'
 excerpt: "I often hear that people dream of the life of a business owner. Everything is done for you by employees you pay, it must be the life! Well unfortunately that isn't the case."
 TOP: 'Business'
+thumbnail: '/post-images/sad-business.jpg'
+thumbnailSource: 'unsplash.com'
 ---
 
 # Lorem Ipsum ─ Header1

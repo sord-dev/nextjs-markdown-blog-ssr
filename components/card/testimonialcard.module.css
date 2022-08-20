@@ -1,3 +1,8 @@
+.testimonialCard  {
+  padding: 1em;
+  margin-top: 10px;
+}
+
 .testimonialCard > div {
     display: flex;
     flex-direction: column;

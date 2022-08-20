@@ -26,6 +26,12 @@
     line-height: 140%;
 }
 
+.catagories {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
 /* TEMP STYLES FOR FUNCTIONALITY, MAKE THEM A GRID */
 
 .blog .content {

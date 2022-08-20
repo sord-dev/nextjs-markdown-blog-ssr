@@ -8,7 +8,7 @@ import { marked } from "marked";
 import styles from "../../styles/pages/blog/blogpage.module.css";
 import MetaData from "../../components/MetaData";
 
-function BlogPage({ frontmatter: { title, date, author, excerpt }, content, slug }) {
+function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thumbnailSource }, content }) {
   return (
     <div>
       <Head>
@@ -25,6 +25,8 @@ function BlogPage({ frontmatter: { title, date, author, excerpt }, content, slug
 
         <div className={styles.thumbnail}>
 
+        <img src={thumbnail} ></img>
+        <span>{`Image From: ${thumbnailSource}`}</span>
         </div>
 
         <div dangerouslySetInnerHTML={ { __html: marked(content) } } className={styles.content}></div>
