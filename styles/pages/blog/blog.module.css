@@ -31,7 +31,7 @@
 .blog .content {
     margin: 40px 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
     gap: 5em;

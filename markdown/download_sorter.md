@@ -1,7 +1,9 @@
 ---
 title: 'test-script'
+author: 'sord-dev'
 date: '18 Aug 2022'
-excerpt: 'his will take all your download folder files and sort them based on their filename extention. (eg. ".exe" or ".jpg").'
+excerpt: 'This will take all your download folder files and sort them based on their filename extention. (eg. ".exe" or ".jpg").'
+TOP: 'test'
 ---
 
 # DL Sorting Script

@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 import styles from "./blogcard.module.css";
 
-function BlogCard() {
+function BlogCard({data, slug}) {
   return (
     <div className={styles.blogCard}>
-        <Link href={'/blog/postID'}>
+        <Link href={`/blog/${slug}`}>
       <div className={styles.image}>
         {/* thumbnail */}
         <h3>Post Picture</h3>
@@ -14,12 +14,10 @@ function BlogCard() {
 
       <div className={styles.content}>
         <div className={styles.main_text}>
-          <p>Type of Post</p>
-          <h4>Post Name</h4>
+          <p>{data.TOP}</p>
+          <h4><Link href={`/blog/${slug}`}>{data.title}</Link></h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rem
-            dignissimos sunt minima quibusdam nobis voluptas voluptatibus iste
-            sit.{" "}
+            {data.excerpt}
           </p>
         </div>
 
@@ -29,8 +27,8 @@ function BlogCard() {
           </div>
 
           <div>
-            <h4>Person Name</h4>
-            <p>Time of Post</p>
+            <h4>{data.author}</h4>
+            <p>{data.date}</p>
           </div>
         </div>
       </div>

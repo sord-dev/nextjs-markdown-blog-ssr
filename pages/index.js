@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 // stylesheet
 import styles from "../styles/pages/home.module.css";
@@ -10,10 +11,13 @@ import ServiceCard from "../components/Card/ServiceCard";
 import ProjectCard from "../components/card/ProjectCard";
 import TestimonialCard from "../components/card/TestimonialCard";
 import BlogCard from "../components/card/BlogCard";
-import Link from "next/link";
 import ContactCard from "../components/card/ContactCard";
 
-export default function Home() {
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+export default function Home({posts}) {
   return (
     <div>
       <Head>
@@ -72,9 +76,9 @@ export default function Home() {
           </div>
 
           <div className={styles.grid}>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+
+          {posts.map(post => <BlogCard key={post.slug} slug={post.slug} data={post.frontmatter} />)}
+            
           </div>
 
           <Link href={"/blog"}> Read More </Link>
@@ -84,4 +88,29 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join('markdown'))
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace('.md', '')
+
+    const markdownWithMeta = fs.readFileSync(path.join('markdown', filename), 'utf-8')
+
+    const {data:frontmatter} = matter(markdownWithMeta)
+
+    return {
+      slug,
+      frontmatter
+    }
+  })
+  
+  return {
+    props: {
+      posts: posts,
+    },
+  }
 }

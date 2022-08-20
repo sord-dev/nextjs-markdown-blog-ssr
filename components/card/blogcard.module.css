@@ -3,12 +3,14 @@
     border-radius: 5px;
     padding-bottom: 1em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
 }
 
 .blogCard .image {
     height: 200px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     background-color: #E1F2EA;
     cursor: pointer;
@@ -24,6 +26,7 @@
 .blogCard .image h3{
     font-size: 1.7em;
     font-weight: 400;
+    margin: auto;
 }
 
 
@@ -31,6 +34,7 @@
 
 .blogCard .content {
     padding: 1.4em;
+
 }
 
 .blogCard .main_text > *,
@@ -41,7 +45,6 @@
 
 .blogCard .main_text {
     text-align: left;
-    max-width: 285px;
 }
 
 .blogCard .main_text h4{
@@ -83,4 +86,13 @@
 
   .blogCard .meta div > p{
     font-size: .89em;
+  }
+
+  .blogCard a {
+    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+  
+  .blogCard a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
   }

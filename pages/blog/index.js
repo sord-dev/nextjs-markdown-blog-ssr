@@ -2,9 +2,13 @@ import Head from "next/head";
 import React from "react";
 import styles from "../../styles/pages/blog/blog.module.css";
 import BlogCard from "../../components/card/BlogCard";
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 
 function Blog(props) {
-    console.log(props)
+    const { posts } = props
+    posts.map(post => console.log(post))
   return (
     <div className={styles.blog}>
       <Head>
@@ -36,14 +40,36 @@ function Blog(props) {
         </div>
 
         <div className={styles.content}>
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          
+          {posts.map(post => <BlogCard key={post.slug} slug={post.slug} data={post.frontmatter} />)}
+
         </div>
       </div>
     </div>
   );
 } 
+
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join('markdown'))
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace('.md', '')
+
+    const markdownWithMeta = fs.readFileSync(path.join('markdown', filename), 'utf-8')
+
+    const {data:frontmatter} = matter(markdownWithMeta)
+
+    return {
+      slug,
+      frontmatter
+    }
+  })
+  
+  return {
+    props: {
+      posts: posts,
+    },
+  }
+}
 
 export default Blog;
