@@ -12,7 +12,7 @@ function ServiceCard({service, description}) {
     </div>
 
     <div className={styles.content}>
-      <h4>{service}</h4>
+      <h3>{service}</h3>
       <p>
         {description}
       </p>

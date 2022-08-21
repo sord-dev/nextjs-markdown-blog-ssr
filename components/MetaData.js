@@ -13,7 +13,7 @@ function MetaData({ author, date, size }) {
       <div></div>
 
       <div>
-        <h4>{author}</h4>
+        <span>{author}</span>
         <p>{date}</p>
       </div>
     </div>

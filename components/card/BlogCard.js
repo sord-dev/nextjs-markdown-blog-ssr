@@ -17,7 +17,7 @@ function BlogCard({data, slug}) {
       <div className={styles.content}>
         <div className={styles.main_text}>
           <span>{data.TOP}</span>
-          <h4><Link href={`/blog/${slug}`}>{data.title}</Link></h4>
+          <Link href={`/blog/${slug}`}>{data.title}</Link>
           <p>
             {data.excerpt}
           </p>

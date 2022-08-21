@@ -104,7 +104,7 @@ export default function Home({ posts }) {
             ))}
           </div>
 
-          <Link href={"/blog"}> Read More </Link>
+          <Link href={"/blog"}> All Posts </Link>
         </div>
 
         <ContactCard />

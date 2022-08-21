@@ -22,7 +22,7 @@
     padding: 0;
   }
   
-  .contactCard > div:first-child h4 {
+  .contactCard > div:first-child h3 {
     font-size: 2em;
     font-weight: 600;
     letter-spacing: 0.2px;

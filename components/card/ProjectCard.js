@@ -6,7 +6,7 @@ function ProjectCard() {
     <div className={styles.projectCard}>
     <div>
       {" "}
-      <h4> Project or Brand Picture </h4>{" "}
+      <h3> Project or Brand Picture </h3>{" "}
     </div>
     <div>
       <h3>Business/Project Name</h3>

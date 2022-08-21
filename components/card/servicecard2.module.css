@@ -49,9 +49,10 @@
 }
 
 .serviceCard div:last-child button {
-  background-color: white;
-  border: 2px solid #c5ecd9;
-  color: #96dab9;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #b9ebd3;
+  font-weight: 700;
+  color: #67b08d;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 

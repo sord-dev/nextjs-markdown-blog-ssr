@@ -6,7 +6,7 @@ function ContactCard() {
   return (
     <div className={styles.contactCard}>
     <div>
-      <h4>Get in touch</h4>
+      <h3>Get in touch</h3>
       <p>
         Want to have a talk about what your website could be missing? Give
         me an email!

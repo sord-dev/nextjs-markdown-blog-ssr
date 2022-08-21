@@ -41,11 +41,14 @@
 
 .blogCard .main_text {
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
-.blogCard .main_text h4 {
+.blogCard .main_text a {
   font-size: 1.2em;
   margin: 7px 0;
+  font-weight: 600;
 }
 
 .blogCard .main_text span{

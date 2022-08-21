@@ -13,7 +13,7 @@
   background-color: #e1f2ea;
 }
 
-.meta div > h4 {
+.meta div > span {
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 0;
@@ -29,7 +29,7 @@
   height: 20px;
 }
 
-.sm div h4 {
+.sm div span {
   font-size: 0.9em;
   font-weight: 500;
   margin-bottom: 0;
@@ -48,7 +48,7 @@
   height: 60px;
 }
 
-.lg div h4 {
+.lg div span {
   font-size: 1.3em;
   font-weight: 500;
   margin-bottom: 0;
