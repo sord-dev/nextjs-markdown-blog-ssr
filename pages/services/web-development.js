@@ -1,10 +1,23 @@
 import React from "react";
 import styles from "../../styles/pages/services/servicepage.module.css";
 import ContactCard from "../../components/card/ContactCard";
+import Head from "next/head";
 
 function webDevelopment() {
   return (
     <div>
+      <Head>
+        <title>Web Development Services</title>
+        <meta
+          name="description"
+          content="Providing clean, modern and well structured webpages."
+        />
+        <meta
+          name="keywords"
+          content="web developer, freelance web dev london, web development, local web development services, web dev, local website development, website structure, website design"
+        />
+      </Head>
+
       <div className={styles.hero}>
         <div>
           <h1>Web Development</h1>
@@ -42,8 +55,6 @@ function webDevelopment() {
           </p>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-          
         </div>
 
         <ContactCard />

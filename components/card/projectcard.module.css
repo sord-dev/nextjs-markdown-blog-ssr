@@ -59,9 +59,9 @@
 }
 
 .projectCard div:last-child button {
-  background-color: white;
+  background-color: rgb(248, 247, 247);
   border: 2px solid #c5ecd9;
-  color: #96dab9;
+  color: #80c9a6;
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import ContactCard from "../../components/card/ContactCard";
 import styles from "../../styles/pages/services/servicepage.module.css";
@@ -5,6 +6,17 @@ import styles from "../../styles/pages/services/servicepage.module.css";
 function webDevelopment() {
   return (
     <div>
+      <Head>
+        <title>Website Auditing Services</title>
+        <meta
+          name="description"
+          content="Get pointers and suggestions on how to improve your website to get more clients!"
+        />
+        <meta
+          name="keywords"
+          content="website audits, rate my site, SEO optimising, website problems, website check up"
+        />
+      </Head>
       <div className={styles.hero}>
         <div>
           <h1>Website Audits</h1>
@@ -44,7 +56,6 @@ function webDevelopment() {
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
         <ContactCard />

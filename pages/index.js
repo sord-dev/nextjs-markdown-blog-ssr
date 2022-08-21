@@ -40,7 +40,7 @@ export default function Home({ posts }) {
 
       <div className="container">
         <div className={styles.services}>
-          <h3>SERVICES</h3>
+          <span>SERVICES</span>
           <h2>A website should be a solution, not a problem</h2>
 
           <div className={styles.services_grid}>
@@ -77,7 +77,7 @@ export default function Home({ posts }) {
 
       <div className={styles.testimonial}>
         <div className={styles.title}>
-          <h3>TESTIMONIALS</h3>
+          <span>TESTIMONIALS</span>
           <h2>People say the nicest things</h2>
         </div>
 
@@ -90,7 +90,7 @@ export default function Home({ posts }) {
       <div className="container pt-10">
         <div className={styles.blog}>
           <div className={styles.title}>
-            <h3>BLOG</h3>
+            <span>BLOG</span>
             <h2>Learn how to grow your business here</h2>
           </div>
 

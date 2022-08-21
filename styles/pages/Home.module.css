@@ -4,12 +4,13 @@
   text-align: center;
 }
 
-.services h3 {
+.services span {
   font-weight: 500;
   letter-spacing: 0.2px;
   margin: 0;
   margin-top: 40px;
   margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
 .services h2 {
@@ -62,13 +63,14 @@
   margin: 0 auto;
 }
 
-.testimonial .title h3 {
+.testimonial .title span {
   font-weight: 500;
   letter-spacing: 0.2px;
   margin: 0;
   margin-top: 40px;
   margin-bottom: 10px;
   opacity: 0.9;
+  font-size: 1.1em;
 }
 .testimonial .title h2 {
   font-size: 2.3em;
