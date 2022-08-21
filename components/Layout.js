@@ -13,6 +13,7 @@ import emailLogo from "../public/email_icon.svg";
 // components
 import hamburger from "../public/hamburger.svg";
 import MobileMenu from "./MobileMenu";
+import ScrollToTop from "./ScrollToTop";
 
 function Layout({ children }) {
   const [click, setClick] = useState(false);
@@ -57,7 +58,9 @@ function Layout({ children }) {
           </div>
         </div>
       </div>
+
       {children}
+      <ScrollToTop />
 
       <div className={styles.footer}>
         <p> &copy; 2022 by Stefan Syrett </p>

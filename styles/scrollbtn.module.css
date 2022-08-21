@@ -1,0 +1,20 @@
+.scrollBtn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #E1F2EA;
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    display: flex;
+    cursor: pointer;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scrollBtn > img{
+    width: 24px;
+    margin: 0 auto;
+    opacity: .9;
+}

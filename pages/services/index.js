@@ -4,9 +4,6 @@ import ServiceCard2 from "../../components/card/ServiceCard2";
 import styles from "../../styles/pages/services/services.module.css";
 
 function services() {
-  //TODO 
-  // ADD RESPONSIVITY!!!
-
   return (
     <div className={styles.services}>
       <Head>

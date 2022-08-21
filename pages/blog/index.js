@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/pages/blog/blog.module.css";
 import BlogCard from "../../components/card/BlogCard";
 import fs from "fs";
@@ -7,7 +7,24 @@ import path from "path";
 import matter from "gray-matter";
 
 function Blog(props) {
-  const { posts, catagories } = props;
+  const [postState, setPostState] = useState([]);
+  const [catagoriesState, setCatagoriesState] = useState([]);
+  const [catagory, setCatagory] = useState([]);
+
+  useEffect(() => {
+    setPostState(props.posts);
+    setCatagoriesState(props.catagories);
+  }, [props]);
+
+  const sortBlogs = (txt) => {
+    if (catagory == txt) {
+      setPostState(props.posts);
+      setCatagory("");
+    } else {
+      setPostState(props.posts.filter((post) => post.frontmatter.TOP == txt));
+      setCatagory(txt);
+    }
+  };
   return (
     <div className={styles.blog}>
       <Head>
@@ -16,10 +33,7 @@ function Blog(props) {
           name="description"
           content="Information to grow your small business and get more leads."
         />
-        <meta
-          name="keywords"
-          content="freelancer, freelancer london, seo, local seo services, how to get leads, get more clients, rank on google, google ranking, search engine optimisation"
-        />
+        <meta name="keywords" content="" />
       </Head>
 
       <div className={styles.title}>
@@ -33,13 +47,19 @@ function Blog(props) {
       <div className="container">
         {/* replace styles and add functionality */}
         <div className={styles.catagories}>
-            {catagories.map(catagory =>  <button key={catagory.text}>{catagory.text}</button>)}
+          {/*  add this */}
+          {catagoriesState.map((catagory) => (
+            <button
+              onClick={() => sortBlogs(catagory.text)}
+              key={catagory.text}
+            >
+              {catagory.text}
+            </button>
+          ))}
         </div>
 
         <div className={styles.content}>
-
-
-          {posts.map((post) => (
+          {postState.map((post) => (
             <BlogCard
               key={post.slug}
               slug={post.slug}
@@ -63,7 +83,7 @@ export async function getStaticProps() {
       "utf-8"
     );
 
-    const { data:frontmatter } = matter(markdownWithMeta);
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
       slug,
@@ -77,17 +97,17 @@ export async function getStaticProps() {
       "utf-8"
     );
 
-    const { data:frontmatter } = matter(markdownWithMeta);
+    const { data: frontmatter } = matter(markdownWithMeta);
 
     return {
-      text: frontmatter.TOP
+      text: frontmatter.TOP,
     };
   });
 
   return {
     props: {
       posts,
-      catagories
+      catagories,
     },
   };
 }

@@ -25,7 +25,7 @@ function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thum
 
         <div className={styles.thumbnail}>
 
-        <img src={thumbnail} ></img>
+        <img src={thumbnail} alt={`blog post image sourced from ${thumbnailSource}`} ></img>
         <span>{`Image From: ${thumbnailSource}`}</span>
         </div>
 
