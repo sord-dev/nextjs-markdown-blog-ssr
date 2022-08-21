@@ -1,11 +1,16 @@
 import React from "react";
-import fs from "fs";
-import path from "path";
 import Head from "next/head";
 
-import matter from "gray-matter";
-import { marked } from "marked";
+//styles
 import styles from "../../styles/pages/blog/blogpage.module.css";
+
+//utils
+import { marked } from "marked";
+import matter from "gray-matter";
+import path from "path";
+import fs from "fs";
+
+//components
 import MetaData from "../../components/MetaData";
 
 function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thumbnailSource }, content }) {

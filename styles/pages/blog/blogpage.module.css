@@ -57,6 +57,15 @@
   margin: 0 auto;
 }
 
+.BlogPage .content a {
+ color: rgb(17, 17, 195);
+ transition: all .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.BlogPage .content a:hover {
+  color: rgb(61, 61, 217);
+ }
+
 
 .BlogPage .content p{
     font-size: 1.2em;
@@ -81,7 +90,8 @@
      padding-left: 2%;
     }
 
-    .BlogPage .thumbnail img{
+    .BlogPage .thumbnail img,
+    .BlogPage .content img{
       max-width: 600px;
     }
   }
@@ -93,7 +103,8 @@
     }
    
 
-    .BlogPage .thumbnail img{
+    .BlogPage .thumbnail img,
+    .BlogPage .content img{
       max-width: 450px;
       margin: 0 auto;
     }
@@ -106,7 +117,8 @@
     }
    
 
-    .BlogPage .thumbnail img{
+    .BlogPage .thumbnail img,
+    .BlogPage .content img{
       max-width: 300px;
       margin: 0 auto;
     }
