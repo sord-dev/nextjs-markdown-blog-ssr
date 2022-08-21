@@ -18,7 +18,7 @@ function ServiceCard2({ title, subtitle }) {
         <h3>{title}</h3>
         <p>{subtitle}</p>
         <Link href={_buttonLink} about={`link to ${title.search(/service/ig) > 0 ? `${title} page` : `${title} services page`}`}>
-          <button>Read More</button>
+          <button>Learn More</button>
         </Link>
       </div>
     </div>

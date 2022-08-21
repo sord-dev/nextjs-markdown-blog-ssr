@@ -18,7 +18,7 @@ function ServiceCard({service, description}) {
       </p>
     </div>
 
-    <Link href={link}>Read More</Link>
+    <Link about={`link to ${service.search(/service/ig) > 0 ? `${service} page` : `${service} services page`}`} href={link}>What is this?</Link>
   </div>
   )
 }
