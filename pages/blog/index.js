@@ -9,7 +9,7 @@ import matter from "gray-matter";
 function Blog(props) {
   const [postState, setPostState] = useState([]);
   const [catagoriesState, setCatagoriesState] = useState([]);
-  const [catagory, setCatagory] = useState([]);
+  const [activeCatagory, setActiveCatagory] = useState([]);
 
   useEffect(() => {
     setPostState(props.posts);
@@ -17,12 +17,12 @@ function Blog(props) {
   }, [props]);
 
   const sortBlogs = (txt) => {
-    if (catagory == txt) {
+    if (activeCatagory == txt) {
       setPostState(props.posts);
-      setCatagory("");
+      setActiveCatagory("");
     } else {
       setPostState(props.posts.filter((post) => post.frontmatter.TOP == txt));
-      setCatagory(txt);
+      setActiveCatagory(txt);
     }
   };
   return (
@@ -50,6 +50,7 @@ function Blog(props) {
           {/*  add this */}
           {catagoriesState.map((catagory) => (
             <button
+            className={catagory.text == activeCatagory ? styles.select : ''}
               onClick={() => sortBlogs(catagory.text)}
               key={catagory.text}
             >

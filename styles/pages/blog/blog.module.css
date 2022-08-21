@@ -32,6 +32,20 @@
     justify-content: center;
 }
 
+.catagories button{
+   opacity: .8;
+   background-color: #2125292e;
+   transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.catagories .select {
+    background-color: #E1F2EA;
+}
+
+.catagories button:hover{
+    opacity: .95;
+ }
+
 /* TEMP STYLES FOR FUNCTIONALITY, MAKE THEM A GRID */
 
 .blog .content {
