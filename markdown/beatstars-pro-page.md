@@ -2,19 +2,17 @@
 title: "Why you shouldn't have a “pro beat store” page"
 author: 'sord-dev'
 date: '20 Aug 2022'
-excerpt: "A pro beat store seems like a brilliant investment surface level, but there are a lot of things that can catch people out and make them lose some real money. Here's how to avoid making the same mistake."
-TOP: 'Testing'
+excerpt: "A pro beat store seems like a brilliant investment surface level, but there are a lot of things that can catch people out and make them lose some real money."
+TOP: 'Music Production'
 thumbnail: '/post-images/beatstars-logo.png'
-thumbnailSource: 'unsplash.com'
+thumbnailSource: 'beatstars.com'
 ---
-
-# Why you shouldn't have a “pro beat store” page
 
 A pro beat store seems like a brilliant investment surface level.
 
-You get a website with your name as the URL, we’re given a theme and we’re able to sell all of your beats easily without changing much if we’re already set up on the platform. It’s easy and quick to do.
+You're given website with our name as the URL, you're given a theme and you’re able to sell all of our beats easily without changing much if you are already set up on the platform. It’s easy and quick to do.
 
-I’m here to tell you the other side of that story. What we exchange for this easy setup and maintenance is access to some fundamental steps to making a high converting beat store.
+I’m here to tell you the other side of that story. What you exchange for this easy setup and maintenance is access to some fundamental steps to making a high converting beat store.
 
 ## Ease of use/Branding
 
@@ -24,13 +22,17 @@ In other words:
 
 Make your website hard to understand and the user will leave, make it easy and the user will stay.
 
-One might ask where the problem is here, well a pro beat store website does not allow for full control of our site.
+One might ask where the problem is here, well a pro beat store website does not allow for full control of our site. Fonts are restricted, colours are restricted too. No background images that may be a little on the creative side.
 
-Fonts are restricted, colours are restricted too. No background images that may be a little on the creative side.
+This leaves us with little working room to actually brand ourselves and give a good impression to our potential customers.
 
-This leaves us with little working room to actually brand ourselves and give a good impression to our potential customers. The effect of this can be low retention, sales and people who end up leaving before they see what we have to offer.
+The effect of this can be low retention, sales and people who end up leaving before they see what we have to offer.
 
-Another problem is the fact we’re unable to optimise. I won’t get into the real nerdy stuff but with a custom website we’re able to reduce loading times down to milliseconds given the correct adjustments. Google notes that as a page's load time goes from one second to five seconds, the probability of users turning away from the page to view other sites increases by 90%. - [article](https://www.zdnet.com/article/reduce-page-load-times-on-your-website-to-retain-users/)
+Another problem is the fact we’re unable to optimise.
+
+I won’t get into the real nerdy stuff but with a custom website we’re able to reduce loading times down to milliseconds given the correct adjustments. Google notes that as a page's load time goes from one second to five seconds, the probability of users turning away from the page to view other sites increases by 90%. - [article](https://www.zdnet.com/article/reduce-page-load-times-on-your-website-to-retain-users/)
+
+While that is a big loss I would also like to say I'm sure there are plenty of 'pro beat pages' out there that are capable of keeping up, but the accessibility of such speeds comes much more easily from the get go with a custom website. Please keep that in mind!
 
 ## Marketing
 
@@ -40,7 +42,7 @@ You know those sites that have a popup with a free offer in exchange for your em
 
 Here’s an example:
 
-![10 Lead Magnets - Venture Harbour](https://lh3.googleusercontent.com/_LwCVCTsDXE4uNHlmyjLuoT8spu25VNFFONqrTskeEL96Mq6WvDVzt5o224DADKf4k1L6j8H41bAbVUZK635NCyKoUmneMOzV0ZR9pfo4BfWsvyWMCB37LQzjd3UiE0r0r_F2tNZAyq5dauI2i3KEno)
+![10 Lead Magnets - Venture Harbour](/post-images/beatstarspropage-lead-magnet.png)
 
 Source: [10 Lead Magnets - Venture Harbour](https://www.ventureharbour.com/10-lead-magnets/)
 

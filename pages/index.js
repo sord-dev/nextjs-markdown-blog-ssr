@@ -49,18 +49,21 @@ export default function Home({ posts }) {
               description={
                 "All my websites are designed with an inherent understanding of brand communication, information architecture, accessibility and usability"
               }
+              imagePath={'/service-icons/development-icon.svg'}
             />
             <ServiceCard
               service={"SEO Services"}
               description={
                 "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
               }
+              imagePath={'/service-icons/seo-icon.svg'}
             />
             <ServiceCard
               service={"Website Audits"}
               description={
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
               }
+              imagePath={'/service-icons/audit-icon.svg'}
             />
           </div>
         </div>
