@@ -75,26 +75,26 @@ function services() {
             imagePath={"/service-icons/development-icon.svg"}
           />
           <MobileServiceCard
-            service={"Web Development"}
+            service={"Web Design"}
             description={
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
             }
-            imagePath={"/service-icons/development-icon.svg"}
+            imagePath={"/service-icons/design-icon.svg"}
           />
           <MobileServiceCard
-            service={"Web Development"}
+            service={"SEO Services"}
             description={
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
             }
-            imagePath={"/service-icons/development-icon.svg"}
+            imagePath={"/service-icons/seo-icon.svg"}
           />
 
           <MobileServiceCard
-            service={"Web Development"}
+            service={"Website Audits"}
             description={
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
             }
-            imagePath={"/service-icons/development-icon.svg"}
+            imagePath={"/service-icons/audit-icon.svg"}
           />
         </div>
       </div>

@@ -12,8 +12,10 @@ function Blog(props) {
   const [activeCatagory, setActiveCatagory] = useState([]);
 
   useEffect(() => {
+    const arr = props.catagories.map((item) => item.text);
+    const uniqueArray = [...new Set(arr)];
     setPostState(props.posts);
-    setCatagoriesState(props.catagories);
+    setCatagoriesState(uniqueArray);
   }, [props]);
 
   const sortBlogs = (txt) => {
@@ -50,11 +52,11 @@ function Blog(props) {
           {/*  add this */}
           {catagoriesState.map((catagory) => (
             <button
-            className={catagory.text == activeCatagory ? styles.select : ''}
-              onClick={() => sortBlogs(catagory.text)}
-              key={catagory.text}
+              className={catagory == activeCatagory ? styles.select : ""}
+              onClick={() => sortBlogs(catagory)}
+              key={catagory}
             >
-              {catagory.text}
+              {catagory}
             </button>
           ))}
         </div>
@@ -97,9 +99,7 @@ export async function getStaticProps() {
       path.join("markdown", filename),
       "utf-8"
     );
-
     const { data: frontmatter } = matter(markdownWithMeta);
-
     return {
       text: frontmatter.TOP,
     };
