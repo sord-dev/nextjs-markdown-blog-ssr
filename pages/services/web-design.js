@@ -26,32 +26,37 @@ function webDesign() {
       </div>
 
       <div className="containertext">
+      <div className={styles.content}>
+          <div className={styles.contentSideBar}>
+            <div>
+              <h3>What is This?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit minima alias architecto asperiores! Amet ea, obcaecati
+                voluptatibus, facere, dolore at deserunt dignissimos corrupti
+                dolorem dolor quidem tempora aspernatur hic dicta?
+              </p>
+            </div>
+
+            <div>
+              <h3>Tools Used</h3>
+              <div className={styles.iconGrid}>
+                <span>icon</span>
+                <span>icon</span>
+                <span>icon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.content}>
-          <h3>What is This?</h3>
+          <h3>My Process</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             minima alias architecto asperiores! Amet ea, obcaecati voluptatibus,
             facere, dolore at deserunt dignissimos corrupti dolorem dolor quidem
             tempora aspernatur hic dicta?
           </p>
-
-          <h3>Why This is Important</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            minima alias architecto asperiores! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Earum non debitis, beatae unde
-            excepturi labore! Optio sint dolorem incidunt ipsam harum cum? Optio
-            atque quibusdam adipisci? Non ipsam iure rerum?
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            minima alias architecto asperiores! Amet ea, obcaecati voluptatibus,
-            facere, dolore at deserunt dignissimos corrupti dolorem dolor quidem
-            tempora aspernatur hic dicta?
-          </p>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
         <ContactCard />

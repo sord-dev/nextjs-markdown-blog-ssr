@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Link from "next/link";
 import React from "react";
-import styles from './mobileservicecard.module.css'
+import styles from "./mobileservicecard.module.css";
 
-function MobileServiceCard({ service, description, imagePath, offset }) {
+function MobileServiceCard({ service, description, imagePath }) {
   const link = "/services/" + service.split(" ").join("-").toLowerCase();
   return (
     <Link
@@ -16,7 +17,7 @@ function MobileServiceCard({ service, description, imagePath, offset }) {
       <div className={styles.mobileServiceCard}>
         <h3>{service}</h3>
 
-        <img src={imagePath} about={'service icon'} />
+        <img src={imagePath} about={"service icon"} />
 
         <p>{description}</p>
       </div>

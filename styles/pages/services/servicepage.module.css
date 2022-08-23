@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4em;
+  margin-bottom: 2.5em;
   color: #212529;
 }
 
@@ -27,7 +27,6 @@
   font-size: 3em;
   font-weight: 700;
   letter-spacing: 0.175px;
-  
 }
 
 .hero div h2 {
@@ -36,29 +35,53 @@
   line-height: 140%;
   letter-spacing: 0.1px;
   max-width: 530px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /* content styles */
 
 .content {
-  background-color: #F3F6F8;
+  background-color: #f3f6f8;
   color: #212529;
 }
 
-.content > h3 {
-font-size: 2.2em;
-font-weight: 600;
-letter-spacing: .2px;
-text-align: left;
-margin-bottom: 5px;
+.content .contentSideBar {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
 }
 
-.content > p {
+.content .contentSideBar:first-child {
+  max-width: 950px;
+}
+
+.content .contentSideBar h3,
+.content h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* make the heading for the icons a correct size */
+.content .contentSideBar div:last-child h3 {
+  font-size: 1.4em;
+  text-align: right;
+}
+
+.content .contentSideBar p,
+.content p {
   font-size: 1.4em;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   text-align: left;
-  
+}
+
+.content > .contentSideBar .iconGrid {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
