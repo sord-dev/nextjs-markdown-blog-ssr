@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./servicecard2.module.css";
 
-function ServiceCard2({ title, subtitle }) {
+function ServiceCard2({ title, subtitle, imagePath, offset }) {
   const _buttonLink = `services/${title
     .split(" ")
     .join("-")
@@ -11,7 +11,7 @@ function ServiceCard2({ title, subtitle }) {
   return (
     <div className={styles.serviceCard}>
       <div>
-        <span>icon</span>
+        <img className={offset ? styles.offset : ''} src={imagePath} alt={`${title.toLowerCase()} service icon`} />
       </div>
 
       <div>

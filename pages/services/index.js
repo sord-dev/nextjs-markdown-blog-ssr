@@ -37,24 +37,29 @@ function services() {
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
+            imagePath={'/service-icons/development-icon.svg'}
           />
           <ServiceCard2
             title={"Web Design"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
+            imagePath={'/service-icons/design-icon.svg'}
+            offset
           />
           <ServiceCard2
             title={"SEO Services"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
+            imagePath={'/service-icons/seo-icon.svg'}
           />
           <ServiceCard2
             title={"Website Audits"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
+            imagePath={'/service-icons/audit-icon.svg'}
           />
         </div>
       </div>
