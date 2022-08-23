@@ -1,7 +1,9 @@
 import Head from "next/head";
 import React from "react";
+import MobileServiceCard from "../../components/card/MobileServiceCard";
 import ServiceCard2 from "../../components/card/ServiceCard2";
 import styles from "../../styles/pages/services/services.module.css";
+
 
 function services() {
   return (
@@ -32,19 +34,20 @@ function services() {
                             -- ./pages/services --
           the file's name must be LOWERCASE AND HYPHANATED.
           Eg. Web Development = web-development.js // Web Design = web-design.js */}
+
           <ServiceCard2
             title={"Web Development"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
-            imagePath={'/service-icons/development-icon.svg'}
+            imagePath={"/service-icons/development-icon.svg"}
           />
           <ServiceCard2
             title={"Web Design"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
-            imagePath={'/service-icons/design-icon.svg'}
+            imagePath={"/service-icons/design-icon.svg"}
             offset
           />
           <ServiceCard2
@@ -52,14 +55,46 @@ function services() {
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
-            imagePath={'/service-icons/seo-icon.svg'}
+            imagePath={"/service-icons/seo-icon.svg"}
           />
           <ServiceCard2
             title={"Website Audits"}
             subtitle={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel, obcaecati eaque deserunt, numquam consequuntur placeat quisquam autem."
             }
-            imagePath={'/service-icons/audit-icon.svg'}
+            imagePath={"/service-icons/audit-icon.svg"}
+          />
+        </div>
+
+        <div className={styles.mobileMenu}>
+          <MobileServiceCard
+            service={"Web Development"}
+            description={
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
+            }
+            imagePath={"/service-icons/development-icon.svg"}
+          />
+          <MobileServiceCard
+            service={"Web Development"}
+            description={
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
+            }
+            imagePath={"/service-icons/development-icon.svg"}
+          />
+          <MobileServiceCard
+            service={"Web Development"}
+            description={
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
+            }
+            imagePath={"/service-icons/development-icon.svg"}
+          />
+
+          <MobileServiceCard
+            service={"Web Development"}
+            description={
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum totam, consequatur ipsam molestias placeat ratione."
+            }
+            imagePath={"/service-icons/development-icon.svg"}
           />
         </div>
       </div>

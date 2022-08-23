@@ -36,7 +36,12 @@ export default function Home({ posts }) {
         ></meta>
       </Head>
 
-      <Hero />
+      <Hero
+        title={"Freelance Web Designer & Front-end Developer"}
+        subtitle={
+          "I help businesses gain clients by designing and developing well optimised and user-experience focused websites."
+        }
+      />
 
       <div className="container">
         <div className={styles.services}>
@@ -49,27 +54,37 @@ export default function Home({ posts }) {
               description={
                 "All my websites are designed with an inherent understanding of brand communication, information architecture, accessibility and usability"
               }
-              imagePath={'/service-icons/development-icon.svg'}
+              imagePath={"/service-icons/development-icon.svg"}
+            />
+            <ServiceCard
+              service={"Web Design"}
+              description={
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
+              }
+              imagePath={"/service-icons/design-icon.svg"}
+              offset
             />
             <ServiceCard
               service={"SEO Services"}
               description={
                 "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
               }
-              imagePath={'/service-icons/seo-icon.svg'}
+              imagePath={"/service-icons/seo-icon.svg"}
             />
             <ServiceCard
               service={"Website Audits"}
               description={
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
               }
-              imagePath={'/service-icons/audit-icon.svg'}
+              imagePath={"/service-icons/audit-icon.svg"}
             />
           </div>
         </div>
       </div>
 
-      <CustomHeading title={"I keep brand image first and foremost in my design process."} />
+      <CustomHeading
+        title={"I keep brand image first and foremost in my design process."}
+      />
 
       <div className="container pt-10">
         <div className={styles.projectList}>

@@ -1,0 +1,47 @@
+.mobileServiceCard {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.mobileServiceCard h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.mobileServiceCard img {
+    opacity: .85;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mobileServiceCard img:focus,
+.mobileServiceCard img:hover {
+    opacity: 1;
+}
+
+.mobileServiceCard p {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 850px){
+
+    .mobileServiceCard {
+        max-width: 250px;
+      }
+}
