@@ -48,11 +48,8 @@
 .content .contentSideBar {
   display: flex;
   gap: 1em;
-  justify-content: center;
-}
-
-.content .contentSideBar:first-child {
-  max-width: 950px;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .content .contentSideBar h3,
@@ -67,7 +64,7 @@
 /* make the heading for the icons a correct size */
 .content .contentSideBar div:last-child h3 {
   font-size: 1.4em;
-  text-align: right;
+  text-align: left;
 }
 
 .content .contentSideBar p,
@@ -84,4 +81,15 @@
   gap: 1em;
   justify-content: flex-end;
   margin-top: 10px;
+}
+
+.content > .contentSideBar .iconGrid img{
+  width: 50px;
+  cursor: pointer;
+  opacity: .9;
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.content > .contentSideBar .iconGrid img:hover{
+  opacity: 1;
 }

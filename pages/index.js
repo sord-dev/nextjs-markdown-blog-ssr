@@ -52,31 +52,31 @@ export default function Home({ posts }) {
             <ServiceCard
               service={"Web Development"}
               description={
-                "All my websites are designed with an inherent understanding of brand communication, information architecture, accessibility and usability"
+                "My development process prioritises fast and user-accessible websites. Catoring to all devices and screen sizes to allow for the best user experience."
               }
               imagePath={"/service-icons/development-icon.svg"}
             />
             <ServiceCard
               service={"Web Design"}
               description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
+                "All my websites are designed with an inherent understanding of brand communication, information architecture, accessibility and usability."
               }
               imagePath={"/service-icons/design-icon.svg"}
               offset
             />
             <ServiceCard
+              service={"Website Audits"}
+              description={
+                "Already have a website? I'll look over it and produce a pdf report detailing any improvements that you could impliment."
+              }
+              imagePath={"/service-icons/audit-icon.svg"}
+            />
+             <ServiceCard
               service={"SEO Services"}
               description={
                 "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines."
               }
               imagePath={"/service-icons/seo-icon.svg"}
-            />
-            <ServiceCard
-              service={"Website Audits"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est libero temporibus alias enim beatae fugit eveniet vel."
-              }
-              imagePath={"/service-icons/audit-icon.svg"}
             />
           </div>
         </div>
