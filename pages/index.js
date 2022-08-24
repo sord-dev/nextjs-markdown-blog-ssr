@@ -52,7 +52,7 @@ export default function Home({ posts }) {
             <ServiceCard
               service={"Web Development"}
               description={
-                "My development process prioritises fast and user-accessible websites. Catoring to all devices and screen sizes to allow for the best user experience."
+                "My process prioritises fast, user-accessible websites. Catoring to all devices and screen sizes to allow for the best user experience."
               }
               imagePath={"/service-icons/development-icon.svg"}
             />
