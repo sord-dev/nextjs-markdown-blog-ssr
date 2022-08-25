@@ -33,6 +33,7 @@
     line-height: 30px;
     font-size: 20px;
     letter-spacing: 0.3px;
+    opacity: .9;
   }
   
   .hero .content button {
@@ -96,22 +97,26 @@
     
   }
   
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 475px) {
+    .hero div {
+      padding: 2em;
+    }
     .hero .content {
       font-size: .1em;
       gap:10px;
     }
     .hero .content h1 {
-      font-size: 23px;
-      max-width: max-content;
+      font-size: 25px;
+      max-width: 300px;
       letter-spacing: 0.5px;
     }
     
   
     .hero .content p {
       line-height: 25px;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 0.3px;
+     
     }
   }
   
