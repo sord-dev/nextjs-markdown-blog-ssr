@@ -4,17 +4,27 @@ import styles from "../styles/mobilemenu.module.css";
 import logo from "../public/logo.svg";
 import Image from "next/image";
 
-function MobileMenu({ onClick }) {
-  const ImageContainer = () => <div></div>;
+function MobileMenu({ setClick, onClick }) {
+  const onNavigate = () => {
+    setClick((prev) => !prev);
+  };
 
   return (
     <div className={styles.mobileMenu}>
       <h2 onClick={onClick}>X</h2>
 
-      <Link href={"/services"}>Services</Link>
-      <Link href={"/blog"}>Blog</Link>
-      <Link href={"/contact"}>Contact</Link>
-      <button>Free Growth Guide</button>
+      <div>
+        <Link href={"/services"}>
+        <a onClick={onClick}>Services</a>
+        </Link>
+        <Link  href={"/blog"}>
+        <a onClick={onClick}>Blog</a>
+        </Link>
+        <Link href={"/contact"}>
+          <a onClick={onClick}>Contact</a>
+        </Link>
+        <button onClick={onClick}>Free Growth Guide</button>
+      </div>
 
       <Link href={"/"}>
         <span className={styles.image}>

@@ -37,7 +37,7 @@ function Layout({ children }) {
             </div>
           </Link>
 
-          <div className={styles.mobileMenu}>
+          <div className={styles.hamburger}>
             <Image
               src={hamburger}
               layout={"fixed"}

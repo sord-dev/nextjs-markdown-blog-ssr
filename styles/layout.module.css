@@ -1,6 +1,6 @@
 /* navbar styles */
 
-.navbar .mobileMenu {
+.navbar .hamburger {
   display: none;
 }
 
@@ -61,19 +61,22 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .navbar .mobileMenu {
+  .navbar .hamburger {
     display: block;
   }
 
   .navbar div:last-child {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 300px) {
   .navbar h1 {
     display: none;
   }
+
+ 
 }
 
 /* footer styles */
