@@ -27,7 +27,7 @@ function MobileMenu({ setClick, onClick }) {
       </div>
 
       <Link href={"/"}>
-        <span className={styles.image}>
+        <span onClick={onClick} className={styles.image}>
           <Image
             src={logo}
             layout={"fixed"}
