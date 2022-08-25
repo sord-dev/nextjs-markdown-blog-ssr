@@ -9,7 +9,7 @@ import emailLogo from "../public/email_icon_black.svg";
 import phoneLogo from "../public/phone_icon.svg";
 
 //styles
-import styles from "../styles/pages/contact.module.css";
+import styles from "../styles/contact.module.css";
 
 function Contact() {
   const [name, setName] = useState("");

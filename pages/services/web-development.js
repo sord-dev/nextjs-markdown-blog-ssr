@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/pages/services/servicepage.module.css";
+import styles from "../../styles/servicepage.module.css";
 import ContactCard from "../../components/card/ContactCard";
 import Head from "next/head";
 import Link from "next/link";

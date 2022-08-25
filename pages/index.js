@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
-// stylesheet
-import styles from "../styles/pages/home.module.css";
+// styles
+import styles from "../styles/home.module.css";
 
 // components
 import Hero from "../components/home/Hero.js";

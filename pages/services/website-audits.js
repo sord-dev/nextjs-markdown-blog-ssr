@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import ContactCard from "../../components/card/ContactCard";
-import styles from "../../styles/pages/services/servicepage.module.css";
+import styles from "../../styles/servicepage.module.css";
 
 function webDevelopment() {
   return (

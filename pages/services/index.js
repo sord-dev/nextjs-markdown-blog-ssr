@@ -6,7 +6,7 @@ import ServiceCard2 from "../../components/card/ServiceCard2.js";
 import MobileServiceCard from "../../components/card/MobileServiceCard.js";
 
 // styles
-import styles from "../../styles/pages/services/services.module.css";
+import styles from "../../styles/services.module.css";
 
 function services() {
   return (

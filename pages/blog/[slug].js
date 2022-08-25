@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 //styles
-import styles from "../../styles/pages/blog/blogpage.module.css";
+import styles from "../../styles/blogpage.module.css";
 
 //utils
 import { marked } from "marked";
@@ -13,7 +13,10 @@ import fs from "fs";
 //components
 import MetaData from "../../components/MetaData";
 
-function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thumbnailSource }, content }) {
+function BlogPage({
+  frontmatter: { title, date, author, excerpt, thumbnail, thumbnailSource },
+  content,
+}) {
   return (
     <div>
       <Head>
@@ -21,7 +24,7 @@ function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thum
       </Head>
 
       <div className={styles.BlogPage}>
-        <MetaData author={author}  date={date} size={'lg'} />
+        <MetaData author={author} date={date} size={"lg"} />
 
         <div className={styles.title}>
           <h1>{title}</h1>
@@ -29,12 +32,17 @@ function BlogPage({ frontmatter: { title, date, author, excerpt, thumbnail, thum
         </div>
 
         <div className={styles.thumbnail}>
-
-        <img src={thumbnail} alt={`blog post image sourced from ${thumbnailSource}`} ></img>
-        <span>{`Image From: ${thumbnailSource}`}</span>
+          <img
+            src={thumbnail}
+            alt={`blog post image sourced from ${thumbnailSource}`}
+          ></img>
+          <span>{`Image From: ${thumbnailSource}`}</span>
         </div>
 
-        <div dangerouslySetInnerHTML={ { __html: marked(content) } } className={styles.content}></div>
+        <div
+          dangerouslySetInnerHTML={{ __html: marked(content) }}
+          className={styles.content}
+        ></div>
       </div>
     </div>
   );

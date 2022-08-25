@@ -1,10 +1,17 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import styles from "../../styles/pages/blog/blog.module.css";
-import BlogCard from "../../components/card/BlogCard";
+
+// utils
+import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
+
+// styles
+import styles from "../../styles/blog.module.css";
+
+// components 
+import BlogCard from "../../components/card/BlogCard";
+
 
 function Blog(props) {
   const [postState, setPostState] = useState([]);
