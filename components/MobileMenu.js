@@ -4,11 +4,7 @@ import styles from "../styles/mobilemenu.module.css";
 import logo from "../public/logo.svg";
 import Image from "next/image";
 
-function MobileMenu({ setClick, onClick }) {
-  const onNavigate = () => {
-    setClick((prev) => !prev);
-  };
-
+function MobileMenu({ onClick }) {
   return (
     <div className={styles.mobileMenu}>
       <h2 onClick={onClick}>X</h2>

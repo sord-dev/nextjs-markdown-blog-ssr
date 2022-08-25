@@ -77,10 +77,7 @@ function Layout({ children }) {
             </div>
           </Link>
 
-          <Link
-            href={"mailto:stefansyrett17@gmail.com"}
-            target={"_blank"}
-          >
+          <Link href={"mailto:stefansyrett17@gmail.com"} target={"_blank"}>
             <div>
               <Image
                 src={emailLogo}
