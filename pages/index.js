@@ -5,13 +5,13 @@ import Link from "next/link";
 import styles from "../styles/pages/home.module.css";
 
 // components
-import Hero from "../components/home/Hero";
-import CustomHeading from "../components/home/CustomHeading";
-import ServiceCard from "../components/Card/ServiceCard";
-import ProjectCard from "../components/card/ProjectCard";
-import TestimonialCard from "../components/card/TestimonialCard";
-import BlogCard from "../components/card/BlogCard";
-import ContactCard from "../components/card/ContactCard";
+import Hero from "../components/home/Hero.js";
+import CustomHeading from "../components/home/CustomHeading.js";
+import ServiceCard from "../components/card/ServiceCard.js";
+import ProjectCard from "../components/card/ProjectCard.js";
+import TestimonialCard from "../components/card/TestimonialCard.js";
+import BlogCard from "../components/card/BlogCard.js";
+import ContactCard from "../components/card/ContactCard.js";
 
 import fs from "fs";
 import path from "path";

@@ -2,8 +2,8 @@ import Head from "next/head";
 import React from "react";
 
 // components
-import ServiceCard2 from "../../components/card/ServiceCard2";
-import MobileServiceCard from "../../components/card/MobileServiceCard";
+import ServiceCard2 from "../../components/card/ServiceCard2.js";
+import MobileServiceCard from "../../components/card/MobileServiceCard.js";
 
 // styles
 import styles from "../../styles/pages/services/services.module.css";
