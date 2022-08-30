@@ -45,6 +45,6 @@
   .mobileMenu div {
     display: flex;
     flex-direction: column;
-    gap: 2.3em;
+    gap: 30px;
     font-size: 1.1em;
   }
