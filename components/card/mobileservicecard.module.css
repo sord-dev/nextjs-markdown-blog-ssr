@@ -15,9 +15,10 @@
 .mobileServiceCard h3 {
   font-size: 1.5em;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 170px;
 }
 
 .mobileServiceCard img {
@@ -36,6 +37,10 @@
   line-height: 16px;
   letter-spacing: 0.015em;
   text-align: center;
+}
+
+.mobileServiceCard .offset {
+  transform: translateX(10px);
 }
 
 

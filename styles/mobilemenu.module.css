@@ -1,5 +1,5 @@
 .mobileMenu {
-    position: absolute;
+    position: fixed;
     background-color: #212529;
     width: 100%;
     top: 0;

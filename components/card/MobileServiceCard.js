@@ -17,7 +17,7 @@ function MobileServiceCard({ service, description, imagePath }) {
       <div className={styles.mobileServiceCard}>
         <h3>{service}</h3>
 
-        <img src={imagePath} about={"service icon"} />
+        <img className={service == 'Web Design' ? styles.offset : ''} src={imagePath} about={"service icon"} />
 
         <p>{description}</p>
       </div>
