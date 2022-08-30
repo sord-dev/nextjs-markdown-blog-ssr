@@ -56,7 +56,7 @@
   margin-bottom: 7px;
   height: 1.4em;
   font-size: 1.1em;
-  max-width: 138px;
+  max-width: 500px;
 }
 
 .serviceCard .content p {
@@ -75,6 +75,5 @@
 .serviceCard a:hover {
   text-decoration: underline;
 }
-
 
 
