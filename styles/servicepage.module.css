@@ -45,6 +45,11 @@
   color: #212529;
 }
 
+.content a{
+color: rgb(27, 27, 210);
+}
+
+
 .content .contentSideBar {
   display: flex;
   gap: 1em;

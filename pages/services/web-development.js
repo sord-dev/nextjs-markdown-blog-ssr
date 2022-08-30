@@ -34,13 +34,12 @@ function webDevelopment() {
         <div className={styles.content}>
           <div className={styles.contentSideBar}>
             <div>
-              <h3>What is This?</h3>
+              <h3>You should probably read this.</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit minima alias architecto asperiores! Amet ea, obcaecati
-                voluptatibus, facere, dolore at deserunt dignissimos corrupti
-                dolorem dolor quidem tempora aspernatur hic dicta?
+              I don't think having all these pages is all that user friendly or easy for someone to make a buying decision. 
               </p>
+
+              <p>I'm taking it upon myself to explain what I'm good at rather than what i can do for the customer. To change this the best thing to do is to split the services up into an actual <a href="https://docs.google.com/document/d/14Md3zH4aqqMORDfbnoTi3lKQlTwT-3QWLHfv7dGzoMY/edit#">service menu</a> with different ctas and landing pages perhaps.</p>
             </div>
 
             <div>
@@ -71,12 +70,13 @@ function webDevelopment() {
         </div>
 
         <div className={styles.content}>
-          <h3>My Process</h3>
+          <h3>This too...</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            minima alias architecto asperiores! Amet ea, obcaecati voluptatibus,
-            facere, dolore at deserunt dignissimos corrupti dolorem dolor quidem
-            tempora aspernatur hic dicta?
+           What I mean by this is that you need to make clear services people can buy and would actually want when it comes to a small business. Design and make a website, or just design it. Manage SEO for an existing website or make it a coninual service. 
+          </p>
+
+          <p>
+          While it's nice to go over hypotheticals all the time it's also nice to stay within the realm of possiblility. What at the moment are you capable of and what do you need to imporve to make money? You're going to have to go back from react and learn html and css properly to get your styling working I believe. 
           </p>
         </div>
 
