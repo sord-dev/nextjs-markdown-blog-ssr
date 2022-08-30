@@ -48,3 +48,9 @@
     gap: 30px;
     font-size: 1.1em;
   }
+
+  @media only screen and (max-width: 600px) {
+    .mobileMenu div {
+        gap: 50px;
+    }
+  }
