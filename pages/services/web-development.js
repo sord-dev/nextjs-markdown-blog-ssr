@@ -36,10 +36,10 @@ function webDevelopment() {
             <div>
               <h3>You should probably read this.</h3>
               <p>
-              I don't think having all these pages is all that user friendly or easy for someone to make a buying decision. 
+              I don&pos;t think having all these pages is all that user friendly or easy for someone to make a buying decision. 
               </p>
 
-              <p>I'm taking it upon myself to explain what I'm good at rather than what i can do for the customer. To change this the best thing to do is to split the services up into an actual <a href="https://docs.google.com/document/d/14Md3zH4aqqMORDfbnoTi3lKQlTwT-3QWLHfv7dGzoMY/edit#">service menu</a> with different ctas and landing pages perhaps.</p>
+              <p>I&pos;m taking it upon myself to explain what I&pos;m good at rather than what i can do for the customer. To change this the best thing to do is to split the services up into an actual <a href="https://docs.google.com/document/d/14Md3zH4aqqMORDfbnoTi3lKQlTwT-3QWLHfv7dGzoMY/edit#">service menu</a> with different ctas and landing pages perhaps.</p>
             </div>
 
             <div>
