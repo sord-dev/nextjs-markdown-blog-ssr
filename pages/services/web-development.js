@@ -76,7 +76,7 @@ function webDevelopment() {
           </p>
 
           <p>
-          While it's nice to go over hypotheticals all the time it's also nice to stay within the realm of possiblility. What at the moment are you capable of and what do you need to imporve to make money? You're going to have to go back from react and learn html and css properly to get your styling working I believe. 
+          While it&pos;s nice to go over hypotheticals all the time it&pos;s also nice to stay within the realm of possiblility. What at the moment are you capable of and what do you need to imporve to make money? You&pos;re going to have to go back from react and learn html and css properly to get your styling working I believe. 
           </p>
         </div>
 
