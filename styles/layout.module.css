@@ -65,7 +65,7 @@
     display: block;
   }
 
-  .navbar {
+  .navbar div {
     gap: unset;
   }
 
