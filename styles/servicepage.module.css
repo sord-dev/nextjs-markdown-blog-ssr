@@ -85,7 +85,10 @@ color: rgb(27, 27, 210);
   display: flex;
   gap: 1em;
   justify-content: flex-end;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 200px;
+  margin: 10px auto;
+ 
 }
 
 .content > .contentSideBar .iconGrid img{
@@ -106,5 +109,6 @@ color: rgb(27, 27, 210);
 
   .content > .contentSideBar .iconGrid {
     justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 }

@@ -34,12 +34,9 @@ function webDevelopment() {
         <div className={styles.content}>
           <div className={styles.contentSideBar}>
             <div>
-              <h3>You should probably read this.</h3>
-              <p>
-              I don&pos;t think having all these pages is all that user friendly or easy for someone to make a buying decision. 
-              </p>
+              <h3>Have a design already?</h3>          
 
-              <p>I&pos;m taking it upon myself to explain what I&pos;m good at rather than what i can do for the customer. To change this the best thing to do is to split the services up into an actual <a href="https://docs.google.com/document/d/14Md3zH4aqqMORDfbnoTi3lKQlTwT-3QWLHfv7dGzoMY/edit#">service menu</a> with different ctas and landing pages perhaps.</p>
+              <p>I can create landing pages and websites from predefined designs if you already have an image in mind for what you&apos;d like your website to look like, making sure the implimentation is fully mobile responsive and runs as smoothly as possible.</p>
             </div>
 
             <div>
@@ -63,6 +60,39 @@ function webDevelopment() {
                     alt="react logo"
                   />
                 </Link>
+
+                <Link
+                   href={"https://strapi.io"}
+                  about={"link to strapi website"}
+                  target={"_blank"}
+                >
+                  <img
+                    src="/service-images/strapi-logo.svg"
+                    alt="strapi logo"
+                  />
+                </Link>
+
+                <Link
+                   href={"https://nodejs.org/"}
+                  about={"link to nodejs website"}
+                  target={"_blank"}
+                >
+                  <img
+                    src="/service-images/nodejs-logo.svg"
+                    alt="nodejs logo"
+                  />
+                </Link>
+
+                <Link
+                   href={"https://www.php.net"}
+                  about={"link to php website"}
+                  target={"_blank"}
+                >
+                  <img
+                    src="/service-images/php_icon.svg"
+                    alt="php logo"
+                  />
+                </Link>
                 
               </div>
             </div>
@@ -70,14 +100,19 @@ function webDevelopment() {
         </div>
 
         <div className={styles.content}>
-          <h3>This too...</h3>
+          <h3>Dynamically updatable webpages</h3>
           <p>
-           What I mean by this is that you need to make clear services people can buy and would actually want when it comes to a small business. Design and make a website, or just design it. Manage SEO for an existing website or make it a coninual service. 
+          I use technologies like <a href="https://strapi.io" target="_blank" rel="noopener noreferrer">strapi</a>, beacause of this I&apos;ll be able to give you easy access to change the content of your website when the job is done.  
           </p>
 
+          <br />
+
+          <h3>Custom Wordpress Themes</h3>
           <p>
-          While it&pos;s nice to go over hypotheticals all the time it&pos;s also nice to stay within the realm of possiblility. What at the moment are you capable of and what do you need to imporve to make money? You&pos;re going to have to go back from react and learn html and css properly to get your styling working I believe. 
+          If you have a site already running on Wordpress you can use a custom theme and keep all of your content basically the same. The same is true if you just have a design in mind and you&apos;d like to have it converted into a Wordpress theme. 
           </p>
+
+      
         </div>
 
         <ContactCard />
