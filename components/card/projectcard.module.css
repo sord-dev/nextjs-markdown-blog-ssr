@@ -6,18 +6,20 @@
   gap: 50px;
 }
 
-.projectCard div:first-child {
+.projectCard img {
   width: 350px;
   height: 250px;
-  background-color: rgba(33, 37, 41, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.projectCard div:first-child h3 {
-  font-size: 2em;
-  font-weight: 400;
+.projectCard img:hover {
+  transform: scale(.95);
+  filter: brightness(1.05);
 }
 
 .projectCard div:last-child > * {

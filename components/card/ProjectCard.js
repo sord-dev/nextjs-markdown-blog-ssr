@@ -1,23 +1,32 @@
 import React from 'react'
 import styles from './projectcard.module.css'
+import Link from 'next/link'
 
-function ProjectCard() {
+function ProjectCard({title, description, linkSRC, imageSRC}) {
   return (
     <div className={styles.projectCard}>
     <div>
-      {" "}
-      <h3> Project or Brand Picture </h3>{" "}
+    <Link href={linkSRC}>
+      <img src={imageSRC} alt={`${title} thumbnail image`} />
+    </Link>
     </div>
     <div>
-      <h3>Business/Project Name</h3>
+      <h3>{title}</h3>
       <p>
-        Vivamus iaculis, tellus a suscipit gravida, nisi augue porta lectus,
-        ac molestie ante tortor sit amet eros. Proin a ligula ex.
+        {description}
       </p>
-      <button>View Website</button>
+      <Link href={linkSRC}><button>View Website</button></Link>
     </div>
   </div>
   )
+}
+
+
+ProjectCard.defaultProps = {
+  title: 'Business/Project Name',
+  description: 'Vivamus iaculis, tellus a suscipit gravida, nisi augue porta lectus, ac molestie ante tortor sit amet eros. Proin a ligula ex.',
+  imageSRC: '/project-thumbnails/placeholder.png',
+  linkSRC: '/'
 }
 
 export default ProjectCard

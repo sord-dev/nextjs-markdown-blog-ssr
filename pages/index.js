@@ -88,8 +88,8 @@ export default function Home({ posts }) {
 
       <div className="container pt-10">
         <div className={styles.projectList}>
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard title='Searealm CRM' description={'A customer relationship manangement software for freelancers and small business owners.'} imageSRC={'/project-thumbnails/searealm_thumbnail.png'} linkSRC={'https://prnt.sc/rIF0NK8fZIEy'} />
+          <ProjectCard  />
         </div>
       </div>
 
