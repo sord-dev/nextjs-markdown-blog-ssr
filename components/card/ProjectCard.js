@@ -5,12 +5,10 @@ import Link from 'next/link'
 function ProjectCard({title, description, linkSRC, imageSRC}) {
   return (
     <div className={styles.projectCard}>
-    <div>
     <Link href={linkSRC}>
       <img src={imageSRC} alt={`${title} thumbnail image`} />
     </Link>
-    </div>
-    <div>
+    <div className={styles.content}>
       <h3>{title}</h3>
       <p>
         {description}

@@ -7,8 +7,8 @@
 }
 
 .projectCard img {
-  width: 350px;
-  height: 250px;
+  max-width: 350px;
+  max-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,18 +22,18 @@
   filter: brightness(1.05);
 }
 
-.projectCard div:last-child > * {
+.projectCard .content > * {
   margin: 0;
   padding: 0;
 }
 
-.projectCard div:last-child h3 {
+.projectCard .content h3 {
   font-size: 2em;
   font-weight: 500;
   letter-spacing: 0.4px;
 }
 
-.projectCard div:last-child p {
+.projectCard .content p {
   margin: 10px 0 15px 0;
   font-size: 1.4em;
   max-width: 600px;
@@ -52,11 +52,6 @@
   .projectCard {
     text-align: center;
     font-size: 0.9em;
-  }
-
-  .projectCard div:first-child {
-    width: 250px;
-    height: 150px;
   }
 }
 
