@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs-markdown-blog-ssr
 
-## Getting Started
+*A Server Side Rendered (SSR) Markdown Blog made in NextJS*
 
-First, run the development server:
+## Lessons Learned
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This project has taught me about NextJS' static and server side rendering capabilities and how advantageous this is to have as compared to a normal SPA (single page application) when creating a website.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+NextJS takes the advantages of Client Side Rendering with no reloads and others and combines them with the advantages of Server Side Rendering and Static Static Site generation for SEO and speed.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Markdown blog
+- Server Side Rendered pages
+- Blog category sort
+- SEO optimised
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Potential Future Features
 
-## Learn More
+ - Adding a CMS for blog posts
+ - Adding more content
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cloning this repo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1.  To get the sample code from GitHub, use the  `git clone`  command to get a local copy of the remote repository. To clone the sample code, run the following command:
+    
+    ```bash
+    $ git clone [https://github.com/sord-dev/nextjs-markdown-blog-ssr.git]
+    ```
 
-## Deploy on Vercel
+    
+2.  Install dependencies
+    ``` bash 
+    $ cd [nextjs-markdown-blog-ssr]
+    $ npm i
+	```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.  Launch the developer server
+    ``` bash 
+    $ npm run dev
+	```
