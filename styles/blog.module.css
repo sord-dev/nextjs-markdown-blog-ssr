@@ -46,13 +46,17 @@
     opacity: .95;
  }
 
-/* TEMP STYLES FOR FUNCTIONALITY, MAKE THEM A GRID */
-
 .blog .content {
     margin: 40px 0;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 5em;
+}
+
+@media screen and (max-width: 620px) {
+    .content {
+        align-items: center;
+        justify-content: center;
+    }
 }

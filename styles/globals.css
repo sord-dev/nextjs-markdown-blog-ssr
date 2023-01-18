@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #F3F6F8;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f6f8;
 }
 
 a {
@@ -27,8 +27,6 @@ a {
   margin: 0 auto;
 }
 
-
-
 button {
   width: 175px;
   height: 45px;
@@ -44,7 +42,6 @@ button {
   letter-spacing: 0.015em;
 }
 
-.pt-10{
+.pt-10 {
   padding-top: 20px;
 }
-

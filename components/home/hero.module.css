@@ -7,7 +7,7 @@
     box-shadow: rgba(100, 100, 111, 0.568) 0px 15px 10px -15px;
   }
   
-  .hero div {
+  .hero .container {
     display: flex;
     justify-content: center;
     color: #f3f6f8;
@@ -35,10 +35,23 @@
     letter-spacing: 0.3px;
     opacity: .9;
   }
+
+  .buttonGroup {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
   
   .hero .content button {
   color: #212529;
   }
+
+  .hero .content button:last-child {
+    color: #c5ecd9;
+    border: 1px solid #c5ecd9;
+    background-color: transparent;
+    }
+
 
   .hero .image {
     flex: 1;
@@ -67,6 +80,13 @@
     .hero .content {
       font-size: .7em;
       gap:10px;
+    }
+
+    .buttonGroup {
+      display: flex;
+      gap: 4em;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .hero .content h1 {

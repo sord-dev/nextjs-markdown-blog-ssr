@@ -54,7 +54,7 @@ function Layout({ children }) {
             <Link href={"/services"}>Services</Link>
             <Link href={"/blog"}>Blog</Link>
             <Link href={"/contact"}>Contact</Link>
-            <button>Free Growth Guide</button>
+            <Link href={"/blog"}><button>Grow your Business</button></Link>
           </div>
         </div>
       </div>

@@ -23,6 +23,7 @@ function Blog(props) {
     const uniqueArray = [...new Set(arr)];
     setPostState(props.posts);
     setCatagoriesState(uniqueArray);
+    console.log(props)
   }, [props]);
 
   const sortBlogs = (txt) => {
